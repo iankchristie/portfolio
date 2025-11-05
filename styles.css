@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.8;
+    color: #1a1a1a;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Left side: Rock wall with vertical tiling */
+.wall-section {
+    width: 10%;
+    background-image: url('seamless_wall.jpg');
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    background-position: left top;
+    position: relative;
+}
+
+.rappeller {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translateX(-62%);
+    width: 500px;
+    height: auto;
+    z-index: 10;
+    transition: top 0.1s ease-out;
+}
+
+/* Right side: Content */
+.content-section {
+    width: 90%;
+    padding: 6rem 8rem;
+    background-color: white;
+    max-width: 1200px;
+}
+
+.content-block {
+    padding: 5rem 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid #e0e0e0;
+    min-height: 600px;
+}
+
+.content-block:last-child {
+    border-bottom: none;
+}
+
+.content-block h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+    letter-spacing: -0.02em;
+}
+
+.content-block h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+}
+
+.content-block h2 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #1a1a1a;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+.content-block p {
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+    color: #4a4a4a;
+    max-width: 700px;
+}
+
+.content-block ul {
+    list-style: none;
+    font-size: 1.125rem;
+    margin-left: 0;
+    margin-top: 1rem;
+}
+
+.content-block li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #4a4a4a;
+}
+
+.content-block li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #1a1a1a;
+    font-weight: bold;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .wall-section {
+        position: relative;
+        width: 100%;
+        height: 300px;
+    }
+
+    .content-section {
+        margin-left: 0;
+        width: 100%;
+        padding: 3rem 2rem;
+    }
+
+    .content-block h1 {
+        font-size: 2.5rem;
+    }
+
+    .content-block h2 {
+        font-size: 2rem;
+    }
+
+    .content-block h3 {
+        font-size: 1.5rem;
+    }
+}
