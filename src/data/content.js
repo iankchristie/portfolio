@@ -1,206 +1,194 @@
+// Helper function to automatically add IDs to items
+const addIds = (items) => items.map((item, index) => ({ ...item, id: index + 1 }));
+
 export const heroContent = {
   name: "Ian Christie",
   subtitle: "Software Engineer - Researcher - Fun Haver",
   bio: [
-    "Raised in Boulder, CO and currently residing in San Francisco, CA.",
-    "I'm passionate about AI, Earth Science, and the intersection of technology and nature."
+    "I'm passionate about Software Engineering, AI, Earth Science, and the intersection of technology and nature.",
+    "Raised in Houston, TX and currently based out of San Francisco and Boulder. "
   ]
 };
 
-export const aiModels = [
+const aiModelsData = [
   {
-    id: 1,
-    title: "AI Model Project 1",
-    description: "Description of AI model project 1. This is a placeholder for actual project content.",
+    title: "Artisanal Small Scale Mining Observation",
+    description: "",
     image: "https://via.placeholder.com/400x300",
     link: "#"
   },
   {
-    id: 2,
-    title: "AI Model Project 2",
-    description: "Description of AI model project 2. This is a placeholder for actual project content.",
+    title: "Ohmward",
+    description: "Power Grid Outage Prediction using meteoroligical and utility data.",
     image: "https://via.placeholder.com/400x300",
     link: "#"
   },
   {
-    id: 3,
-    title: "AI Model Project 3",
-    description: "Description of AI model project 3. This is a placeholder for actual project content.",
+    title: "Wildfire Vunerability",
+    description: "",
     image: "https://via.placeholder.com/400x300",
     link: "#"
   },
   {
-    id: 4,
-    title: "AI Model Project 4",
-    description: "Description of AI model project 4. This is a placeholder for actual project content.",
+    title: "LLM Based Browser Automations",
+    description: "",
     image: "https://via.placeholder.com/400x300",
     link: "#"
   },
   {
-    id: 5,
-    title: "AI Model Project 5",
-    description: "Description of AI model project 5. This is a placeholder for actual project content.",
+    title: "GeoClimb",
+    description: "",
     image: "https://via.placeholder.com/400x300",
     link: "#"
   },
   {
-    id: 6,
-    title: "AI Model Project 6",
-    description: "Description of AI model project 6. This is a placeholder for actual project content.",
+    title: "Cortical Plasticity",
+    description: "",
     image: "https://via.placeholder.com/400x300",
     link: "#"
   },
-  {
-    id: 7,
-    title: "AI Model Project 7",
-    description: "Description of AI model project 7. This is a placeholder for actual project content.",
-    image: "https://via.placeholder.com/400x300",
-    link: "#"
-  },
-  {
-    id: 8,
-    title: "AI Model Project 8",
-    description: "Description of AI model project 8. This is a placeholder for actual project content.",
-    image: "https://via.placeholder.com/400x300",
-    link: "#"
-  },
-  {
-    id: 9,
-    title: "AI Model Project 9",
-    description: "Description of AI model project 9. This is a placeholder for actual project content.",
-    image: "https://via.placeholder.com/400x300",
-    link: "#"
-  }
 ];
 
-export const experience = [
+const experienceData = [
   {
-    id: 1,
-    title: "Engineering Role 1",
-    description: "Description of engineering experience 1. This is a placeholder for actual content.",
+    title: "Felicity Langfuse Monitoring",
+    description: "",
     image: "https://via.placeholder.com/400x300",
     link: "#"
   },
   {
-    id: 2,
-    title: "Engineering Role 2",
-    description: "Description of engineering experience 2. This is a placeholder for actual content.",
+    title: "GreenPortfolio Cloud Architecture",
+    description: "",
     image: "https://via.placeholder.com/400x300",
     link: "#"
   },
   {
-    id: 3,
-    title: "Engineering Role 3",
-    description: "Description of engineering experience 3. This is a placeholder for actual content.",
+    title: "Square Go Elastic Search",
+    description: "",
     image: "https://via.placeholder.com/400x300",
     link: "#"
   },
   {
-    id: 4,
-    title: "Engineering Role 4",
-    description: "Description of engineering experience 4. This is a placeholder for actual content.",
+    title: "GDPR Compliance",
+    description: "",
     image: "https://via.placeholder.com/400x300",
     link: "#"
   },
   {
-    id: 5,
-    title: "Engineering Role 5",
-    description: "Description of engineering experience 5. This is a placeholder for actual content.",
+    title: "Feature Flag Bot",
+    description: "",
     image: "https://via.placeholder.com/400x300",
     link: "#"
   },
   {
-    id: 6,
-    title: "Engineering Role 6",
-    description: "Description of engineering experience 6. This is a placeholder for actual content.",
+    title: "Android Architecture",
+    description: "",
     image: "https://via.placeholder.com/400x300",
     link: "#"
   },
   {
-    id: 7,
-    title: "Engineering Role 7",
-    description: "Description of engineering experience 7. This is a placeholder for actual content.",
+    title: "Youtube Video Synchronization Protocol with Interleaving",
+    description: "",
     image: "https://via.placeholder.com/400x300",
     link: "#"
   },
   {
-    id: 8,
-    title: "Engineering Role 8",
-    description: "Description of engineering experience 8. This is a placeholder for actual content.",
+    title: "The Physical Web",
+    description: "",
     image: "https://via.placeholder.com/400x300",
     link: "#"
   },
-  {
-    id: 9,
-    title: "Engineering Role 9",
-    description: "Description of engineering experience 9. This is a placeholder for actual content.",
-    image: "https://via.placeholder.com/400x300",
-    link: "#"
-  }
 ];
 
-export const personalProjects = [
+const personalProjectsData = [
   {
-    id: 1,
-    title: "Personal Project 1",
-    description: "Description of personal project 1. This is a placeholder for actual project content.",
+    title: "LifeOS",
+    description: "",
     image: "https://via.placeholder.com/400x300",
     link: "#"
   },
   {
-    id: 2,
-    title: "Personal Project 2",
-    description: "Description of personal project 2. This is a placeholder for actual project content.",
+    title: "El Capitan",
+    description: "",
     image: "https://via.placeholder.com/400x300",
     link: "#"
   },
   {
-    id: 3,
-    title: "Personal Project 3",
-    description: "Description of personal project 3. This is a placeholder for actual project content.",
+    title: "John Muir Trail",
+    description: "",
     image: "https://via.placeholder.com/400x300",
     link: "#"
   },
   {
-    id: 4,
-    title: "Personal Project 4",
-    description: "Description of personal project 4. This is a placeholder for actual project content.",
+    title: "Half Dome",
+    description: "",
     image: "https://via.placeholder.com/400x300",
     link: "#"
   },
   {
-    id: 5,
-    title: "Personal Project 5",
-    description: "Description of personal project 5. This is a placeholder for actual project content.",
+    title: "Lost Array Spire",
+    description: "",
     image: "https://via.placeholder.com/400x300",
     link: "#"
   },
   {
-    id: 6,
-    title: "Personal Project 6",
-    description: "Description of personal project 6. This is a placeholder for actual project content.",
+    title: "Map Projections",
+    description: "",
     image: "https://via.placeholder.com/400x300",
     link: "#"
   },
   {
-    id: 7,
-    title: "Personal Project 7",
-    description: "Description of personal project 7. This is a placeholder for actual project content.",
+    title: "Tuolumne Triple Crown",
+    description: "",
+    image: "https://via.placeholder.com/400x300",
+    link: "#"
+  },
+
+  {
+    title: "Van",
+    description: "",
     image: "https://via.placeholder.com/400x300",
     link: "#"
   },
   {
-    id: 8,
-    title: "Personal Project 8",
-    description: "Description of personal project 8. This is a placeholder for actual project content.",
+    title: "The Grand Canyon",
+    description: "",
     image: "https://via.placeholder.com/400x300",
     link: "#"
   },
   {
-    id: 9,
-    title: "Personal Project 9",
-    description: "Description of personal project 9. This is a placeholder for actual project content.",
+    title: "Marathon",
+    description: "",
     image: "https://via.placeholder.com/400x300",
     link: "#"
-  }
+  },
+  {
+    title: "The Servies",
+    description: "",
+    image: "https://via.placeholder.com/400x300",
+    link: "#"
+  },
+    {
+    title: "Kilimanjaro",
+    description: "",
+    image: "https://via.placeholder.com/400x300",
+    link: "#"
+  },
+    {
+    title: "NOLS",
+    description: "",
+    image: "https://via.placeholder.com/400x300",
+    link: "#"
+  },
+  {
+    title: "Bike'n Build",
+    description: "",
+    image: "https://via.placeholder.com/400x300",
+    link: "#"
+  },
 ];
+
+// Export with auto-generated IDs
+export const aiModels = addIds(aiModelsData);
+export const experience = addIds(experienceData);
+export const personalProjects = addIds(personalProjectsData);

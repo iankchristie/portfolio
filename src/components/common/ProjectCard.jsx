@@ -1,6 +1,14 @@
-export function ProjectCard({ title, description, image, link }) {
+import { useNavigate } from 'react-router-dom';
+
+export function ProjectCard({ title, description, image, link, id }) {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/under-construction');
+  };
+
   return (
-    <div className="project-card">
+    <div className="project-card" onClick={handleClick} style={{ cursor: 'pointer' }}>
       <div className="project-card-image">
         <img src={image} alt={title} />
       </div>

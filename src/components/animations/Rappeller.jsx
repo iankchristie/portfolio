@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useScrollPosition } from '../../hooks/useScrollPosition';
 
-export function Rappeller() {
+export function Rappeller({ imageSrc = '/rappeller.png' }) {
   const scrollPosition = useScrollPosition();
   const [hasLoaded, setHasLoaded] = useState(false);
   const [currentPosition, setCurrentPosition] = useState(150);
@@ -51,7 +51,7 @@ export function Rappeller() {
 
   return (
     <img
-      src="/rappeller.png"
+      src={imageSrc}
       alt="Rappeller character"
       className={`rappeller ${hasLoaded ? 'animate-in' : ''}`}
       style={rappellerStyle}
