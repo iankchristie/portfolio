@@ -17,12 +17,21 @@ export function Projects() {
       );
 
   const toggleTag = (tag) => {
-    setSelectedTags(prev =>
-      prev.includes(tag)
-        ? prev.filter(t => t !== tag)
-        : [...prev, tag]
-    );
+    if (tag === 'all') {
+      // When "All" is clicked, clear all selected tags
+      setSelectedTags([]);
+    } else {
+      // When any other tag is clicked, toggle it
+      setSelectedTags(prev =>
+        prev.includes(tag)
+          ? prev.filter(t => t !== tag)
+          : [...prev, tag]
+      );
+    }
   };
+
+  // Check if "All" should be considered selected (when no tags are selected)
+  const isAllSelected = selectedTags.length === 0;
 
   return (
     <Layout>
@@ -48,6 +57,35 @@ export function Projects() {
           marginBottom: '3rem',
           flexWrap: 'wrap'
         }}>
+          {/* All button */}
+          <button
+            onClick={() => toggleTag('all')}
+            style={{
+              padding: '0.5rem 1.5rem',
+              backgroundColor: isAllSelected ? '#1a1a1a' : 'white',
+              color: isAllSelected ? 'white' : '#1a1a1a',
+              border: '2px solid #1a1a1a',
+              borderRadius: '24px',
+              fontSize: '1rem',
+              cursor: 'pointer',
+              transition: 'all 0.2s',
+              textTransform: 'capitalize'
+            }}
+            onMouseOver={(e) => {
+              if (!isAllSelected) {
+                e.target.style.backgroundColor = '#f5f5f5';
+              }
+            }}
+            onMouseOut={(e) => {
+              if (!isAllSelected) {
+                e.target.style.backgroundColor = 'white';
+              }
+            }}
+          >
+            All
+          </button>
+
+          {/* Other tags */}
           {allTags.map(tag => (
             <button
               key={tag}

@@ -5,8 +5,8 @@ export const heroContent = {
   name: "Ian Christie",
   subtitle: "Software Engineer - Researcher - Fun Haver",
   bio: [
-    "I'm passionate about Software Engineering, AI, Earth Science, and the intersection of technology and nature.",
-    "Raised in Houston, TX and currently based out of San Francisco and Boulder. "
+    "I'm passionate about Software Engineering, AI, Earth Science, Remote Sensing, and the intersection of technology & nature. When I'm not doing those things, I'm outside playing.",
+    "Raised in Houston, currently based out of San Francisco and Boulder. "
   ]
 };
 
@@ -14,49 +14,49 @@ const projectsData = [
   {
     title: "Artisanal Small Scale Mining Observation",
     description: "",
-    image: "https://via.placeholder.com/400x300",
+    image: "/asm.png",
     link: "#",
     tags: ["ai", "environment"]
   },
   {
     title: "Ohmward",
     description: "Power Grid Outage Prediction using meteoroligical and utility data.",
-    image: "https://via.placeholder.com/400x300",
+    image: "/ohmward.png",
     link: "#",
     tags: ["ai", "environment"]
   },
   {
     title: "Wildfire Vunerability",
     description: "",
-    image: "https://via.placeholder.com/400x300",
+    image: "/wildfire.png",
     link: "#",
     tags: ["ai", "environment"]
   },
   {
     title: "LLM Based Browser Automations",
     description: "",
-    image: "https://via.placeholder.com/400x300",
+    image: "llm.jpg",
     link: "#",
     tags: ["ai"]
   },
   {
     title: "GeoClimb",
     description: "",
-    image: "https://via.placeholder.com/400x300",
+    image: "/geoclimb.png",
     link: "#",
     tags: ["ai"]
   },
   {
     title: "Cortical Plasticity",
     description: "",
-    image: "https://via.placeholder.com/400x300",
+    image: "/cortical.png",
     link: "#",
     tags: ["ai", "neuroscience"]
   },
   {
     title: "Felicity Langfuse Monitoring",
     description: "",
-    image: "https://via.placeholder.com/400x300",
+    image: "/llm.jpg",
     link: "#",
     tags: ["engineering"]
   },
@@ -112,70 +112,70 @@ const projectsData = [
   {
     title: "LifeOS",
     description: "",
-    image: "https://via.placeholder.com/400x300",
+    image: "/life_os.png",
     link: "#",
     tags: ["personal"]
   },
   {
     title: "El Capitan",
     description: "",
-    image: "https://via.placeholder.com/400x300",
+    image: "/el_cap.jpg",
     link: "#",
     tags: ["personal", "outdoors"]
   },
   {
     title: "John Muir Trail",
     description: "",
-    image: "https://via.placeholder.com/400x300",
+    image: "/jmt.JPG",
     link: "#",
     tags: ["personal", "outdoors"]
   },
   {
     title: "Half Dome",
     description: "",
-    image: "https://via.placeholder.com/400x300",
+    image: "/half_dome.jpg",
     link: "#",
     tags: ["personal", "outdoors"]
   },
   {
     title: "Lost Array Spire",
     description: "",
-    image: "https://via.placeholder.com/400x300",
+    image: "/lost_arrow.jpg",
     link: "#",
     tags: ["personal", "outdoors"]
   },
   {
     title: "Map Projections",
     description: "",
-    image: "https://via.placeholder.com/400x300",
+    image: "/map_projections.png",
     link: "#",
     tags: ["personal"]
   },
   {
     title: "Tuolumne Triple Crown",
     description: "",
-    image: "https://via.placeholder.com/400x300",
+    image: "/triple_crown.jpg",
     link: "#",
     tags: ["personal", "outdoors"]
   },
   {
     title: "Van",
     description: "",
-    image: "https://via.placeholder.com/400x300",
+    image: "/van.jpg",
     link: "#",
     tags: ["personal"]
   },
   {
     title: "The Grand Canyon",
     description: "",
-    image: "https://via.placeholder.com/400x300",
+    image: "/grand_canyon.jpg",
     link: "#",
     tags: ["personal", "outdoors"]
   },
   {
     title: "Marathon",
     description: "",
-    image: "https://via.placeholder.com/400x300",
+    image: "marathon.jpg",
     link: "#",
     tags: ["personal", "outdoors"]
   },
