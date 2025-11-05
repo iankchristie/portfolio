@@ -16,3 +16,10 @@ window.addEventListener('scroll', updateRappellerPosition);
 
 // Set initial position
 updateRappellerPosition();
+
+// Animate rappeller descent after page load with delay
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        rappeller.classList.add('animate-in');
+    }, 500); // 500ms delay after page load
+});
