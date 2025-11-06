@@ -3,7 +3,7 @@ import { Layout } from '../layout/Layout';
 
 export function UnderConstruction() {
   return (
-    <Layout showRappeller={true} rappellerImage="/construction-rapeller.png">
+    <Layout showRappeller={true} rappellerImage={`${import.meta.env.BASE_URL}construction-rapeller.png`}>
       <div style={{
         display: 'flex',
         flexDirection: 'column',
@@ -29,7 +29,7 @@ export function UnderConstruction() {
           This page is currently being built. Check back soon!
         </p>
         <img
-          src="/construction.jpg"
+          src={`${import.meta.env.BASE_URL}construction.jpg`}
           alt="Under construction"
           style={{
             maxWidth: '200px',

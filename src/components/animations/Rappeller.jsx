@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useScrollPosition } from '../../hooks/useScrollPosition';
 
-export function Rappeller({ imageSrc = '/rappeller.png' }) {
+export function Rappeller({ imageSrc = `${import.meta.env.BASE_URL}rappeller.png` }) {
   const scrollPosition = useScrollPosition();
   const [hasLoaded, setHasLoaded] = useState(false);
   const [currentPosition, setCurrentPosition] = useState(150);

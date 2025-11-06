@@ -9,7 +9,7 @@ import { Projects } from './components/pages/Projects.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio">
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/about" element={<About />} />

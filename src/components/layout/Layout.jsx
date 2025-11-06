@@ -2,7 +2,7 @@ import { Header } from './Header';
 import { Footer } from './Footer';
 import { Rappeller } from '../animations/Rappeller';
 
-export function Layout({ children, showRappeller = true, rappellerImage = '/rappeller.png' }) {
+export function Layout({ children, showRappeller = true, rappellerImage = `${import.meta.env.BASE_URL}rappeller.png` }) {
   return (
     <>
       <Header />
