@@ -56,56 +56,56 @@ const projectsData = [
   {
     title: "Felicity Langfuse Monitoring",
     description: "",
-    image: "/llm.jpg",
+    image: "/langfuse.svg",
     link: "#",
     tags: ["engineering"]
   },
   {
     title: "GreenPortfolio Cloud Architecture",
     description: "",
-    image: "https://via.placeholder.com/400x300",
+    image: "/greenportfolio_lgo.avif",
     link: "#",
     tags: ["engineering"]
   },
   {
     title: "Square Go Elastic Search",
     description: "",
-    image: "https://via.placeholder.com/400x300",
+    image: "/square_go.webp",
     link: "#",
     tags: ["engineering"]
   },
   {
     title: "GDPR Compliance",
     description: "",
-    image: "https://via.placeholder.com/400x300",
+    image: "square.jpg",
     link: "#",
     tags: ["engineering"]
   },
   {
     title: "Feature Flag Bot",
     description: "",
-    image: "https://via.placeholder.com/400x300",
+    image: "/flag.jpg",
     link: "#",
     tags: ["engineering"]
   },
   {
     title: "Android Architecture",
     description: "",
-    image: "https://via.placeholder.com/400x300",
+    image: "/jack.png",
     link: "#",
     tags: ["engineering"]
   },
   {
     title: "Youtube Video Synchronization Protocol with Interleaving",
     description: "",
-    image: "https://via.placeholder.com/400x300",
+    image: "/youtube.png",
     link: "#",
     tags: ["engineering"]
   },
   {
     title: "The Physical Web",
     description: "",
-    image: "https://via.placeholder.com/400x300",
+    image: "/chrome.svg",
     link: "#",
     tags: ["engineering"]
   },
@@ -182,28 +182,28 @@ const projectsData = [
   {
     title: "The Servies",
     description: "",
-    image: "https://via.placeholder.com/400x300",
+    image: "/servies.png",
     link: "#",
     tags: ["personal"]
   },
   {
     title: "Kilimanjaro",
     description: "",
-    image: "https://via.placeholder.com/400x300",
+    image: "kilimanjaro.jpg",
     link: "#",
     tags: ["personal", "outdoors"]
   },
   {
-    title: "NOLS",
+    title: "NOLS Patagonia",
     description: "",
-    image: "https://via.placeholder.com/400x300",
+    image: "/nols.JPG",
     link: "#",
     tags: ["personal", "outdoors"]
   },
   {
     title: "Bike'n Build",
     description: "",
-    image: "https://via.placeholder.com/400x300",
+    image: "bnb.jpg",
     link: "#",
     tags: ["personal", "outdoors"]
   },

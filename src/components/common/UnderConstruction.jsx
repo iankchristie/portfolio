@@ -28,6 +28,17 @@ export function UnderConstruction() {
         }}>
           This page is currently being built. Check back soon!
         </p>
+        <img
+          src="/construction.jpg"
+          alt="Under construction"
+          style={{
+            maxWidth: '200px',
+            width: '100%',
+            height: 'auto',
+            marginBottom: '2rem',
+            borderRadius: '12px'
+          }}
+        />
         <Link
           to="/"
           style={{

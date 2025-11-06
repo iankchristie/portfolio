@@ -229,7 +229,7 @@ body {
     width: 100%;
     aspect-ratio: 4/3;
     overflow: hidden;
-    background: #e5e5e5;
+    background: white;
 }
 
 .project-card-image img {
