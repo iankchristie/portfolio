@@ -28,15 +28,7 @@ export function About() {
           color: '#1a1a1a'
         }}>
           <p style={{ marginBottom: '1.5rem' }}>
-            [Add your about content here]
-          </p>
-
-          <p style={{ marginBottom: '1.5rem' }}>
-            [Tell your story]
-          </p>
-
-          <p style={{ marginBottom: '1.5rem' }}>
-            [Share your background and interests]
+            Coming Soon!
           </p>
         </div>
       </div>
