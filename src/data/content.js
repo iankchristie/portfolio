@@ -20,197 +20,197 @@ export const heroContent = {
 
 const projectsData = [
   {
-    title: "Artisanal Small Scale Mining Observation",
-    description: "",
+    title: "Small Scale Mining Detection",
+    description: "Semantic Segmentation Model of Remote Sensing Data",
     image: getImagePath("/asm.png"),
     link: "#",
     tags: ["ai", "environment"]
   },
   {
     title: "Ohmward",
-    description: "Power Grid Outage Prediction using meteoroligical and utility data.",
+    description: "Power Grid Outage Prediction using Meteoroligical and Utility data.",
     image: getImagePath("/ohmward.png"),
     link: "#",
     tags: ["ai", "environment"]
   },
   {
     title: "Wildfire Vunerability",
-    description: "",
+    description: "Agentic LLM Analysis of Operational Response Forms",
     image: getImagePath("/wildfire.png"),
     link: "#",
     tags: ["ai", "environment"]
   },
   {
-    title: "LLM Based Browser Automations",
-    description: "",
+    title: "Browser Automations",
+    description: "LLM Structured Outputs into an Abstract Syntax Tree DSL",
     image: getImagePath("llm.jpg"),
     link: "#",
     tags: ["ai"]
   },
   {
     title: "GeoClimb",
-    description: "",
+    description: "Geologic Foundation Model Aimed at Detecting Novel Climbing Areas",
     image: getImagePath("/geoclimb.png"),
     link: "#",
     tags: ["ai"]
   },
   {
     title: "Cortical Plasticity",
-    description: "",
+    description: "NeuroBiologic Model for the Development of Direction Selectivity",
     image: getImagePath("/cortical.png"),
     link: "#",
     tags: ["ai", "neuroscience"]
   },
   {
-    title: "Felicity Langfuse Monitoring",
-    description: "",
+    title: "Felicity: Langfuse Monitoring",
+    description: "LLM Experimentation, Deployment, Regresssion Tracking, Dataset Development",
     image: getImagePath("/langfuse.svg"),
     link: "#",
     tags: ["engineering"]
   },
   {
-    title: "GreenPortfolio Cloud Architecture",
-    description: "",
+    title: "GreenPortfolio: Cloud Architecture",
+    description: "GCP Environment Setup using Terraform",
     image: getImagePath("/greenportfolio_lgo.avif"),
     link: "#",
     tags: ["engineering"]
   },
   {
-    title: "Square Go Elastic Search",
-    description: "",
+    title: "Square: Go Elastic Search",
+    description: "Elastic Search for Consumer Bookings App",
     image: getImagePath("/square_go.webp"),
     link: "#",
     tags: ["engineering"]
   },
   {
-    title: "GDPR Compliance",
-    description: "",
+    title: "Square: GDPR Compliance",
+    description: "Durable System for PII Tracking",
     image: getImagePath("square.jpg"),
     link: "#",
     tags: ["engineering"]
   },
   {
-    title: "Feature Flag Bot",
-    description: "",
+    title: "Square: Feature Flag Bot",
+    description: "Monitoring & Alerting System for Feature Flag Deprecation",
     image: getImagePath("/flag.jpg"),
     link: "#",
     tags: ["engineering"]
   },
   {
-    title: "Android Architecture",
-    description: "",
+    title: "Square: Android Architecture",
+    description: "Overview of Android Architecture at Square",
     image: getImagePath("/jack.png"),
     link: "#",
     tags: ["engineering"]
   },
   {
-    title: "Youtube Video Synchronization Protocol with Interleaving",
-    description: "",
+    title: "Google: Video Synchronization Protocol",
+    description: "Video Interleaving for Continous Offline Content",
     image: getImagePath("/youtube.png"),
     link: "#",
     tags: ["engineering"]
   },
   {
-    title: "The Physical Web",
-    description: "",
+    title: "Google: The Physical Web",
+    description: "Long Deprecated Bluetooth Beacon Integration with Chrome",
     image: getImagePath("/chrome.svg"),
     link: "#",
     tags: ["engineering"]
   },
   {
     title: "LifeOS",
-    description: "",
+    description: "Home Grown Task & Time Management App",
     image: getImagePath("/life_os.png"),
     link: "#",
     tags: ["personal"]
   },
   {
     title: "El Capitan",
-    description: "",
+    description: "Picking the Nose and Going Up It",
     image: getImagePath("/el_cap.jpg"),
     link: "#",
     tags: ["personal", "outdoors"]
   },
   {
     title: "John Muir Trail",
-    description: "",
+    description: "15 Days in the Most Beautiful Place on Earth",
     image: getImagePath("/jmt.JPG"),
     link: "#",
     tags: ["personal", "outdoors"]
   },
   {
     title: "Half Dome",
-    description: "",
+    description: "30th Birthday Celebration!",
     image: getImagePath("/half_dome.jpg"),
     link: "#",
     tags: ["personal", "outdoors"]
   },
   {
     title: "Lost Array Spire",
-    description: "",
+    description: "Fancy Rope Work for Cool Photos",
     image: getImagePath("/lost_arrow.jpg"),
     link: "#",
     tags: ["personal", "outdoors"]
   },
   {
     title: "Map Projections",
-    description: "",
+    description: "My Favorite is Van Der Grinten. The Earth's not a Square, it's a Circle! I like Cricles! Today is Gonna be a Good Day!",
     image: getImagePath("/map_projections.png"),
     link: "#",
     tags: ["personal"]
   },
   {
     title: "Tuolumne Triple Crown",
-    description: "",
+    description: "One of the Best Days in the Mountains",
     image: getImagePath("/triple_crown.jpg"),
     link: "#",
     tags: ["personal", "outdoors"]
   },
   {
     title: "Van",
-    description: "",
+    description: "Bob the Van Builder: Yes We Can!",
     image: getImagePath("/van.jpg"),
     link: "#",
     tags: ["personal"]
   },
   {
     title: "The Grand Canyon",
-    description: "",
+    description: "18 Days in the Most Beautiful Place on Earth",
     image: getImagePath("/grand_canyon.jpg"),
     link: "#",
     tags: ["personal", "outdoors"]
   },
   {
     title: "Marathon",
-    description: "",
+    description: "Running is Cool",
     image: getImagePath("marathon.jpg"),
     link: "#",
     tags: ["personal", "outdoors"]
   },
   {
     title: "The Servies",
-    description: "",
+    description: "The Dundies Inspired Work Offsite",
     image: getImagePath("/servies.png"),
     link: "#",
     tags: ["personal"]
   },
   {
     title: "Kilimanjaro",
-    description: "",
+    description: "The Tallest Mountain in Africa with Pops",
     image: getImagePath("kilimanjaro.jpg"),
     link: "#",
     tags: ["personal", "outdoors"]
   },
   {
-    title: "NOLS Patagonia",
-    description: "",
+    title: "Patagonia",
+    description: "A semester in Patagonia",
     image: getImagePath("/nols.JPG"),
     link: "#",
     tags: ["personal", "outdoors"]
   },
   {
     title: "Bike'n Build",
-    description: "",
+    description: "Cross Country Bike Trip from Rhode Island to Seattle",
     image: getImagePath("bnb.jpg"),
     link: "#",
     tags: ["personal", "outdoors"]
