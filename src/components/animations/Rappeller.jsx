@@ -17,7 +17,7 @@ export function Rappeller({ imageSrc = `${import.meta.env.BASE_URL}rappeller.png
   }, []);
 
   useEffect(() => {
-    const targetPosition = scrollPosition + 150;
+    const targetPosition = scrollPosition + 25;
 
     const animate = () => {
       setCurrentPosition(prev => {

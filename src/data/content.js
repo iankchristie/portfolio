@@ -2,7 +2,7 @@
 const addIds = (items) => items.map((item, index) => ({ ...item, id: index + 1 }));
 
 // Helper to get correct image path with base URL
-const getImagePath = (path) => {
+export const getImagePath = (path) => {
   const base = import.meta.env.BASE_URL || '/';
   // Remove leading slash if present to avoid double slashes
   const cleanPath = path.startsWith('/') ? path.slice(1) : path;
