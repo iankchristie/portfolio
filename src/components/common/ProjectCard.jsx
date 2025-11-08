@@ -4,7 +4,12 @@ export function ProjectCard({ title, description, image, link, id }) {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/under-construction');
+    // Check if this is GeoClimb project
+    if (title === 'GeoClimb') {
+      navigate('/projects/geoclimb');
+    } else {
+      navigate('/under-construction');
+    }
   };
 
   return (

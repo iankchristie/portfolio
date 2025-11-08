@@ -83,20 +83,6 @@ const projectsData = [
     tags: ["engineering"]
   },
   {
-    title: "Square: GDPR Compliance",
-    description: "Durable System for PII Tracking",
-    image: getImagePath("square.jpg"),
-    link: "#",
-    tags: ["engineering"]
-  },
-  {
-    title: "Square: Feature Flag Bot",
-    description: "Monitoring & Alerting System for Feature Flag Deprecation",
-    image: getImagePath("/flag.jpg"),
-    link: "#",
-    tags: ["engineering"]
-  },
-  {
     title: "Square: Android Architecture",
     description: "Overview of Android Architecture at Square",
     image: getImagePath("/jack.png"),
@@ -114,6 +100,20 @@ const projectsData = [
     title: "Google: The Physical Web",
     description: "Long Deprecated Bluetooth Beacon Integration with Chrome",
     image: getImagePath("/chrome.svg"),
+    link: "#",
+    tags: ["engineering"]
+  },
+    {
+    title: "Square: GDPR Compliance",
+    description: "Durable System for PII Tracking",
+    image: getImagePath("square.jpg"),
+    link: "#",
+    tags: ["engineering"]
+  },
+  {
+    title: "Square: Feature Flag Bot",
+    description: "Monitoring & Alerting System for Feature Flag Deprecation",
+    image: getImagePath("/flag.jpg"),
     link: "#",
     tags: ["engineering"]
   },
@@ -138,6 +138,27 @@ const projectsData = [
     link: "#",
     tags: ["personal", "outdoors"]
   },
+    {
+    title: "The Grand Canyon",
+    description: "18 Days in the Most Beautiful Place on Earth",
+    image: getImagePath("/grand_canyon.jpg"),
+    link: "#",
+    tags: ["personal", "outdoors"]
+  },
+  {
+    title: "Map Projections",
+    description: "My Favorite is Van Der Grinten. The Earth's not a Square, it's a Circle! I like Cricles! Today is Gonna be a Good Day!",
+    image: getImagePath("/map_projections.png"),
+    link: "#",
+    tags: ["personal"]
+  },
+    {
+    title: "Van",
+    description: "Bob the Van Builder: Yes We Can!",
+    image: getImagePath("/van.jpg"),
+    link: "#",
+    tags: ["personal"]
+  },
   {
     title: "Half Dome",
     description: "30th Birthday Celebration!",
@@ -153,30 +174,9 @@ const projectsData = [
     tags: ["personal", "outdoors"]
   },
   {
-    title: "Map Projections",
-    description: "My Favorite is Van Der Grinten. The Earth's not a Square, it's a Circle! I like Cricles! Today is Gonna be a Good Day!",
-    image: getImagePath("/map_projections.png"),
-    link: "#",
-    tags: ["personal"]
-  },
-  {
     title: "Tuolumne Triple Crown",
     description: "One of the Best Days in the Mountains",
     image: getImagePath("/triple_crown.jpg"),
-    link: "#",
-    tags: ["personal", "outdoors"]
-  },
-  {
-    title: "Van",
-    description: "Bob the Van Builder: Yes We Can!",
-    image: getImagePath("/van.jpg"),
-    link: "#",
-    tags: ["personal"]
-  },
-  {
-    title: "The Grand Canyon",
-    description: "18 Days in the Most Beautiful Place on Earth",
-    image: getImagePath("/grand_canyon.jpg"),
     link: "#",
     tags: ["personal", "outdoors"]
   },
