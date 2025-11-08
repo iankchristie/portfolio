@@ -57,10 +57,6 @@ export function GeoClimb() {
           }}>
             Midpoint Report
           </h3>
-
-          <p style={{ marginBottom: '1.5rem' }}>
-            View the midpoint research paper documenting early progress and findings.
-          </p>
         </div>
 
         <div style={{

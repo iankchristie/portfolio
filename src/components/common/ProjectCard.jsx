@@ -4,9 +4,11 @@ export function ProjectCard({ title, description, image, link, id }) {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    // Check if this is GeoClimb project
+    // Check if this is a project with a dedicated page
     if (title === 'GeoClimb') {
       navigate('/projects/geoclimb');
+    } else if (title === 'Cortical Plasticity') {
+      navigate('/projects/cortical-plasticity');
     } else {
       navigate('/under-construction');
     }
