@@ -1,6 +1,6 @@
-import { StrictMode } from 'react'
+import { StrictMode, useEffect } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom'
 import App from './App.jsx'
 import { UnderConstruction } from './components/common/UnderConstruction.jsx'
 import { Contact } from './components/pages/Contact.jsx'
@@ -11,9 +11,25 @@ import { CorticalPlasticity } from './components/pages/CorticalPlasticity.jsx'
 import { Ohmward } from './components/pages/Ohmward.jsx'
 import { ScrollToTop } from './components/common/ScrollToTop.jsx'
 
+// Component to handle 404 redirects from GitHub Pages
+function RedirectHandler() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const redirect = sessionStorage.getItem('redirect');
+    if (redirect) {
+      sessionStorage.removeItem('redirect');
+      navigate(redirect);
+    }
+  }, [navigate]);
+
+  return null;
+}
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
+      <RedirectHandler />
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<App />} />
