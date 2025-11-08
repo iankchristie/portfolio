@@ -11,7 +11,7 @@ export function HeroSection({ content }) {
         </div>
       </div>
       <div className="hero-image">
-        <img src={`${import.meta.env.BASE_URL}pic.jpg`} alt="Ian Christie" />
+        <img src={`${import.meta.env.BASE_URL}pic.png`} alt="Ian Christie" />
       </div>
     </section>
   );
