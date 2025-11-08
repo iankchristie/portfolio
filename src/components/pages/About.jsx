@@ -28,7 +28,7 @@ export function About() {
           color: '#1a1a1a'
         }}>
           <p style={{ marginBottom: '1.5rem' }}>
-            Hello, my name is Ian Christie!
+            Hello, my name is Ian!
           </p>
 
           <p style={{ marginBottom: '1.5rem' }}>
@@ -40,7 +40,7 @@ export function About() {
           </p>
 
           <p style={{ marginBottom: '1.5rem' }}>
-            I got as far away from Houston as I could for college, attending Brandeis University in Boston, MA. After my freshman year, I biked across the country with Bike and Build, an experience that solidified my drive to tackle big challenges in the outdoors. This led me to take a semester off in my junior year for a National Outdoor Leadership School (NOLS) program in Patagonia.
+            I got as far away from Houston as I could for college, attending Brandeis University in Boston, MA. After my freshman year, I biked across the country with Bike and Build, an experience that solidified my drive to tackle big challenges in the outdoors.
           </p>
 
           <p style={{ marginBottom: '1.5rem' }}>

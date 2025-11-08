@@ -181,13 +181,6 @@ const projectsData = [
     tags: ["personal", "outdoors"]
   },
   {
-    title: "Marathon",
-    description: "Running is Cool",
-    image: getImagePath("marathon.jpg"),
-    link: "#",
-    tags: ["personal", "outdoors"]
-  },
-  {
     title: "The Servies",
     description: "The Dundies Inspired Work Offsite",
     image: getImagePath("/servies.png"),
