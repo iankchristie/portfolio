@@ -78,7 +78,6 @@ body {
     flex-direction: column;
     background-color: white;
     position: relative;
-    z-index: 20;
 }
 
 .header-left {
@@ -316,6 +315,10 @@ body {
     .wall-section {
         width: 66%;
         height: 300px;
+    }
+
+    .content-wrapper {
+        z-index: 20;
     }
 
     .rappeller {

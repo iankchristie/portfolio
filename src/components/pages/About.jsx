@@ -63,6 +63,24 @@ export function About() {
             During this time, I've gotten really into rock climbing, culminating in ascents of Half Dome and El Capitan. Now, the stoke is high for alpine running, and I'm excited to see where it takes me.
           </p>
         </div>
+
+        <div style={{
+          width: '100%',
+          display: 'flex',
+          justifyContent: 'center',
+          marginTop: '3rem'
+        }}>
+          <img
+            src={`${import.meta.env.BASE_URL}running_draw.png`}
+            alt="Running illustration"
+            style={{
+              maxWidth: '400px',
+              width: '100%',
+              height: 'auto',
+              borderRadius: '8px'
+            }}
+          />
+        </div>
       </div>
     </Layout>
   );
