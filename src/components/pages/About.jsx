@@ -9,12 +9,12 @@ export function About() {
         alignItems: 'center',
         justifyContent: 'center',
         minHeight: '60vh',
-        padding: '2rem',
+        padding: 'clamp(1rem, 3vw, 2rem)',
         maxWidth: '800px',
         margin: '0 auto'
       }}>
         <h1 style={{
-          fontSize: '3rem',
+          fontSize: 'clamp(2rem, 5vw, 3rem)',
           marginBottom: '2rem',
           color: '#1a1a1a'
         }}>
@@ -23,7 +23,7 @@ export function About() {
 
         <div style={{
           width: '100%',
-          fontSize: '1.125rem',
+          fontSize: 'clamp(1rem, 2vw, 1.125rem)',
           lineHeight: '1.8',
           color: '#1a1a1a'
         }}>
