@@ -26,6 +26,17 @@ export function CorticalPlasticity() {
         </p>
 
         <div style={{
+          fontSize: 'clamp(1rem, 2vw, 1.125rem)',
+          lineHeight: '1.8',
+          color: '#1a1a1a',
+          marginBottom: '3rem'
+        }}>
+          <p style={{ marginBottom: '1.5rem' }}>
+            This was my undergraduate thesis working with Dr. Stephen Van Hooser on producing a computational model of directional selectivity.
+          </p>
+        </div>
+
+        <div style={{
           width: '100%',
           marginTop: '2rem',
           marginBottom: '3rem'

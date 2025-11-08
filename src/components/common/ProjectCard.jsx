@@ -9,6 +9,8 @@ export function ProjectCard({ title, description, image, link, id }) {
       navigate('/projects/geoclimb');
     } else if (title === 'Cortical Plasticity') {
       navigate('/projects/cortical-plasticity');
+    } else if (title === 'Ohmward') {
+      navigate('/projects/ohmward');
     } else {
       navigate('/under-construction');
     }

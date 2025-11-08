@@ -1,6 +1,15 @@
 import { Layout } from '../layout/Layout';
 
 export function GeoClimb() {
+  // Images from the geo_climb folder
+  const geoClimbImages = [
+    `${import.meta.env.BASE_URL}geo_climb/IMG_1220.jpg`,
+    `${import.meta.env.BASE_URL}geo_climb/IMG_1224.jpg`,
+    `${import.meta.env.BASE_URL}geo_climb/IMG_1226.jpg`,
+    `${import.meta.env.BASE_URL}geo_climb/IMG_1252_(1).jpg`,
+    `${import.meta.env.BASE_URL}geo_climb/IMG_1249_Large.jpeg`,
+    `${import.meta.env.BASE_URL}geo_climb/IMG_5074_(1).jpg`
+  ];
   return (
     <Layout showRappeller={true}>
       <div style={{
@@ -24,6 +33,73 @@ export function GeoClimb() {
         }}>
           Geologic Foundation Model Aimed at Detecting Novel Climbing Areas
         </p>
+
+        <div style={{
+          fontSize: 'clamp(1rem, 2vw, 1.125rem)',
+          lineHeight: '1.8',
+          color: '#1a1a1a',
+          marginBottom: '3rem'
+        }}>
+          <p style={{ marginBottom: '1.5rem' }}>
+            By combining data from <strong>Mountain Project</strong> (existing climbing locations), <strong>Sentinel-II satellite imagery</strong>, <strong>Digital Elevation Models (DEM)</strong>, and <strong>lithology data</strong>, I built a model that identifies geographic areas of interest that might contain undiscovered rock climbing opportunities.
+          </p>
+
+          <p style={{ marginBottom: '1.5rem' }}>
+            The real test? Taking the model's predictions into the field. When the model highlighted a promising location in <strong>Rocky Mountain National Park</strong>, some friends and I decided to investigate. We hiked out to the predicted area and discovered quality rock that had never been climbed before.
+          </p>
+
+          <p style={{ marginBottom: '1.5rem' }}>
+            That day, we established a new route: <strong>"Adventure is Out There" (5.6)</strong> — proof that machine learning and adventure can go hand in hand.
+          </p>
+        </div>
+
+        {/* Image Grid */}
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+          gap: '1.5rem',
+          width: '100%',
+          marginTop: '2rem',
+          marginBottom: '3rem'
+        }}>
+          {geoClimbImages.map((image, index) => (
+            <div
+              key={index}
+              style={{
+                borderRadius: '8px',
+                overflow: 'hidden',
+                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+                backgroundColor: '#f5f5f5'
+              }}
+            >
+              <img
+                src={image}
+                alt={`GeoClimb project ${index + 1}`}
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                  display: 'block'
+                }}
+              />
+            </div>
+          ))}
+        </div>
+
+        <div style={{
+          fontSize: 'clamp(1rem, 2vw, 1.125rem)',
+          lineHeight: '1.8',
+          color: '#1a1a1a'
+        }}>
+          <h3 style={{
+            fontSize: 'clamp(1.25rem, 2.5vw, 1.5rem)',
+            marginTop: '3rem',
+            marginBottom: '1rem',
+            color: '#1a1a1a'
+          }}>
+            Final Report
+          </h3>
+        </div>
 
 
         <div style={{

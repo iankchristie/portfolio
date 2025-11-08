@@ -8,6 +8,7 @@ import { About } from './components/pages/About.jsx'
 import { Projects } from './components/pages/Projects.jsx'
 import { GeoClimb } from './components/pages/GeoClimb.jsx'
 import { CorticalPlasticity } from './components/pages/CorticalPlasticity.jsx'
+import { Ohmward } from './components/pages/Ohmward.jsx'
 import { ScrollToTop } from './components/common/ScrollToTop.jsx'
 
 createRoot(document.getElementById('root')).render(
@@ -20,6 +21,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/geoclimb" element={<GeoClimb />} />
         <Route path="/projects/cortical-plasticity" element={<CorticalPlasticity />} />
+        <Route path="/projects/ohmward" element={<Ohmward />} />
         <Route path="/project/:id" element={<UnderConstruction />} />
         <Route path="/under-construction" element={<UnderConstruction />} />
         <Route path="/contact" element={<Contact />} />
