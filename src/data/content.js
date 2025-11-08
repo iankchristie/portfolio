@@ -30,7 +30,7 @@ const projectsData = [
     title: "Ohmward",
     description: "Power Grid Outage Prediction using Meteoroligical and Utility data.",
     image: getImagePath("/ohmward.png"),
-    link: "#",
+    link: "/projects/ohmward",
     tags: ["ai", "environment"]
   },
   {
@@ -51,14 +51,14 @@ const projectsData = [
     title: "GeoClimb",
     description: "Geologic Foundation Model Aimed at Detecting Novel Climbing Areas",
     image: getImagePath("/geoclimb.png"),
-    link: "#",
+    link: "/projects/geoclimb",
     tags: ["ai"]
   },
   {
     title: "Cortical Plasticity",
     description: "NeuroBiologic Model for the Development of Direction Selectivity",
     image: getImagePath("/cortical.png"),
-    link: "#",
+    link: "/projects/cortical-plasticity",
     tags: ["ai", "neuroscience"]
   },
   {
