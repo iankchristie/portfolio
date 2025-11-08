@@ -41,15 +41,15 @@ export function GeoClimb() {
           marginBottom: '3rem'
         }}>
           <p style={{ marginBottom: '1.5rem' }}>
-            By combining data from <strong>Mountain Project</strong> (existing climbing locations), <strong>Sentinel-II satellite imagery</strong>, <strong>Digital Elevation Models (DEM)</strong>, and <strong>lithology data</strong>, I built a model that identifies geographic areas of interest that might contain undiscovered rock climbing opportunities.
+            By combining data from Mountain Project(existing climbing locations), Sentinel-II satellite imagery, Digital Elevation Models (DEM) and lithology data I built a model that identifies geographic areas of interest that might contain undiscovered rock climbing opportunities.
           </p>
 
           <p style={{ marginBottom: '1.5rem' }}>
-            The real test? Taking the model's predictions into the field. When the model highlighted a promising location in <strong>Rocky Mountain National Park</strong>, some friends and I decided to investigate. We hiked out to the predicted area and discovered quality rock that had never been climbed before.
+            The real test? Taking the model's predictions into the field. When the model highlighted a promising location in Rocky Mountain National Park some friends and I decided to investigate. We hiked out to the predicted area and discovered quality rock that had never been climbed before.
           </p>
 
           <p style={{ marginBottom: '1.5rem' }}>
-            That day, we established a new route: <strong>"Adventure is Out There" (5.6)</strong> — proof that machine learning and adventure can go hand in hand.
+            That day, we established a new route: <strong>"Adventure is Out There" (5.6)</strong>.
           </p>
         </div>
 

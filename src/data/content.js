@@ -37,7 +37,7 @@ const projectsData = [
     title: "Wildfire Vunerability",
     description: "Agentic LLM Analysis of Operational Response Forms",
     image: getImagePath("/wildfire.png"),
-    link: "#",
+    link: "/projects/wildfire-vulnerability",
     tags: ["ai", "environment"]
   },
   {

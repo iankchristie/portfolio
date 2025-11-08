@@ -9,6 +9,7 @@ import { Projects } from './components/pages/Projects.jsx'
 import { GeoClimb } from './components/pages/GeoClimb.jsx'
 import { CorticalPlasticity } from './components/pages/CorticalPlasticity.jsx'
 import { Ohmward } from './components/pages/Ohmward.jsx'
+import { WildfireVulnerability } from './components/pages/WildfireVulnerability.jsx'
 import { ScrollToTop } from './components/common/ScrollToTop.jsx'
 
 // Component to handle 404 redirects from GitHub Pages
@@ -38,6 +39,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/projects/geoclimb" element={<GeoClimb />} />
         <Route path="/projects/cortical-plasticity" element={<CorticalPlasticity />} />
         <Route path="/projects/ohmward" element={<Ohmward />} />
+        <Route path="/projects/wildfire-vulnerability" element={<WildfireVulnerability />} />
         <Route path="/project/:id" element={<UnderConstruction />} />
         <Route path="/under-construction" element={<UnderConstruction />} />
         <Route path="/contact" element={<Contact />} />
