@@ -44,7 +44,7 @@ const projectsData = [
     title: "Browser Automations",
     description: "LLM Structured Outputs into an Abstract Syntax Tree DSL",
     image: getImagePath("llm.jpg"),
-    link: "#",
+    link: "/projects/browser-automations",
     tags: ["ai"]
   },
   {
