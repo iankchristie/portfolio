@@ -25,6 +25,15 @@ export function Ohmward() {
           By <a href="https://www.linkedin.com/in/iankchristie/" target="_blank" rel="noopener noreferrer" style={{ color: '#1a1a1a', textDecoration: 'underline' }}>Ian Christie</a> & <a href="https://www.linkedin.com/in/jasmine-garland-883527199/" target="_blank" rel="noopener noreferrer" style={{ color: '#1a1a1a', textDecoration: 'underline' }}>Jasmine Garland</a>
         </p>
 
+        <p style={{
+          fontSize: 'clamp(1rem, 2vw, 1.125rem)',
+          color: '#1a1a1a',
+          marginBottom: '2rem',
+          fontStyle: 'italic'
+        }}>
+          This paper was accepted and presented at the IEEE PES ISGT EUROPE 2025 conference in Malta.
+        </p>
+
         <div style={{
           fontSize: 'clamp(1rem, 2vw, 1.125rem)',
           lineHeight: '1.8',
@@ -40,8 +49,8 @@ export function Ohmward() {
 
           <div style={{
             width: '100%',
-            marginBottom: '2rem',
-            marginTop: '2rem'
+            maxWidth: '50%',
+            margin: '2rem auto',
           }}>
             <img
               src="https://miro.medium.com/v2/resize:fit:1400/1*fPQX5qGz0NjPKy0B9iFtAQ.png"
@@ -70,7 +79,7 @@ export function Ohmward() {
             marginBottom: '1rem',
             color: '#1a1a1a'
           }}>
-            🔍 Why Power Outage Prediction Matters
+            Why Power Outage Prediction Matters
           </h2>
 
           <p style={{ marginBottom: '1.5rem' }}>
@@ -87,7 +96,7 @@ export function Ohmward() {
             marginBottom: '1rem',
             color: '#1a1a1a'
           }}>
-            🤖 vs.🌲 The Models: Transformers vs. Trees
+            The Models: Transformers vs. Trees
           </h2>
 
           <p style={{ marginBottom: '1.5rem' }}>
@@ -113,7 +122,7 @@ export function Ohmward() {
             marginBottom: '1rem',
             color: '#1a1a1a'
           }}>
-            ⏳ How Much History Do You Need?
+            How Much History Do You Need?
           </h2>
 
           <p style={{ marginBottom: '1.5rem' }}>
@@ -130,7 +139,7 @@ export function Ohmward() {
             marginBottom: '1rem',
             color: '#1a1a1a'
           }}>
-            🌍 Can a Model Trained in Colorado Work in LA?
+            Can a Model Trained in Colorado Work in LA?
           </h2>
 
           <p style={{ marginBottom: '1.5rem' }}>
@@ -151,7 +160,7 @@ export function Ohmward() {
             marginBottom: '1rem',
             color: '#1a1a1a'
           }}>
-            📊 What Drives Outages? Surface Pressure
+            What Drives Outages? Surface Pressure
           </h2>
 
           <p style={{ marginBottom: '1.5rem' }}>
@@ -164,7 +173,7 @@ export function Ohmward() {
             marginBottom: '1rem',
             color: '#1a1a1a'
           }}>
-            🔌 Integrating IEEE Reliability Metrics: A Utility Perspective
+            Integrating IEEE Reliability Metrics: A Utility Perspective
           </h2>
 
           <p style={{ marginBottom: '1.5rem' }}>
@@ -194,7 +203,7 @@ export function Ohmward() {
             marginBottom: '1rem',
             color: '#1a1a1a'
           }}>
-            🌐 Try It Live: Ohmward Web App
+            Try It Live: Ohmward Web App
           </h2>
 
           <p style={{ marginBottom: '1.5rem' }}>
@@ -203,8 +212,8 @@ export function Ohmward() {
 
           <div style={{
             width: '100%',
-            marginBottom: '2rem',
-            marginTop: '2rem'
+            maxWidth: '50%',
+            margin: '2rem auto',
           }}>
             <img
               src="https://miro.medium.com/v2/resize:fit:1400/1*oOi1-1Fa444pkZ-h0jTQnw.jpeg"
@@ -233,7 +242,7 @@ export function Ohmward() {
             marginBottom: '1rem',
             color: '#1a1a1a'
           }}>
-            🚧 Limitations and the Road Ahead
+            Limitations and the Road Ahead
           </h2>
 
           <p style={{ marginBottom: '1.5rem' }}>
