@@ -23,7 +23,7 @@ const projectsData = [
     title: "Small Scale Mining Detection",
     description: "Semantic Segmentation Model of Remote Sensing Data",
     image: getImagePath("/asm.png"),
-    link: "#",
+    link: "/projects/small-scale-mining",
     tags: ["ai", "environment"]
   },
   {
