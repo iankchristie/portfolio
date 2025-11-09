@@ -72,7 +72,7 @@ const projectsData = [
     title: "GreenPortfolio: Cloud Architecture",
     description: "GCP Environment Setup using Terraform",
     image: getImagePath("/greenportfolio_lgo.avif"),
-    link: "#",
+    link: "/projects/greenportfolio",
     tags: ["engineering"]
   },
   {

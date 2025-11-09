@@ -12,6 +12,7 @@ import { Ohmward } from './components/pages/Ohmward.jsx'
 import { WildfireVulnerability } from './components/pages/WildfireVulnerability.jsx'
 import { BrowserAutomations } from './components/pages/BrowserAutomations.jsx'
 import { SmallScaleMining } from './components/pages/SmallScaleMining.jsx'
+import { GreenPortfolio } from './components/pages/GreenPortfolio.jsx'
 import { ScrollToTop } from './components/common/ScrollToTop.jsx'
 
 // Component to handle 404 redirects from GitHub Pages
@@ -44,6 +45,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/projects/wildfire-vulnerability" element={<WildfireVulnerability />} />
         <Route path="/projects/browser-automations" element={<BrowserAutomations />} />
         <Route path="/projects/small-scale-mining" element={<SmallScaleMining />} />
+        <Route path="/projects/greenportfolio" element={<GreenPortfolio />} />
         <Route path="/project/:id" element={<UnderConstruction />} />
         <Route path="/under-construction" element={<UnderConstruction />} />
         <Route path="/contact" element={<Contact />} />
