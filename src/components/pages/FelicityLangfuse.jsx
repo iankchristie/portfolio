@@ -31,7 +31,7 @@ export function FelicityLangfuse() {
           margin: '2rem auto',
         }}>
           <object
-            data={`${import.meta.env.BASE_URL}prompt_workflow_animated.svg`}
+            data={`${import.meta.env.BASE_URL}prompt_workflow_animated2.svg`}
             type="image/svg+xml"
             style={{
               width: '100%',
@@ -41,7 +41,7 @@ export function FelicityLangfuse() {
             }}
           >
             <img
-              src={`${import.meta.env.BASE_URL}prompt_workflow_animated.svg`}
+              src={`${import.meta.env.BASE_URL}prompt_workflow_animated2.svg`}
               alt="Langfuse Prompt Workflow Animation"
               style={{
                 width: '100%',
