@@ -93,7 +93,7 @@ const projectsData = [
     title: "Google: Video Synchronization Protocol",
     description: "Video Interleaving for Continous Offline Content",
     image: getImagePath("/youtube.png"),
-    link: "#",
+    link: "/projects/youtube-sync",
     tags: ["engineering"]
   },
   {

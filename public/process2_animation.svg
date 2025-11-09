@@ -1,0 +1,73 @@
+<svg viewBox="0 0 800 380" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Define gradient for videos -->
+    <linearGradient id="videoGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a90e2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2e5f8a;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Define gradient for new videos -->
+    <linearGradient id="newVideoGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#50c878;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d8659;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">
+    Alternate Delete → Download
+  </text>
+
+  <!-- Storage container -->
+  <rect x="250" y="80" width="300" height="280" rx="10" fill="none" stroke="#666" stroke-width="3"/>
+  <text x="400" y="110" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#666">Video Storage</text>
+  
+  <!-- Video 1 slot -->
+  <g id="video1">
+    <!-- Old Video 1 -->
+    <g>
+      <animate attributeName="opacity" values="1;1;0;0;0;0;0;0;0;0;0;0;1" keyTimes="0;0.1;0.15;0.2;0.3;0.4;0.5;0.6;0.7;0.8;0.9;0.95;1" dur="12s" repeatCount="indefinite"/>
+      <rect x="320" y="140" width="160" height="50" rx="5" fill="url(#videoGrad)" stroke="#2e5f8a" stroke-width="2"/>
+      <text x="400" y="170" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">Video 1</text>
+    </g>
+    <!-- New Video 1 -->
+    <g>
+      <animate attributeName="opacity" values="0;0;0;1;1;1;1;1;1;1;1;0;0" keyTimes="0;0.15;0.2;0.25;0.3;0.4;0.5;0.6;0.7;0.8;0.9;0.95;1" dur="12s" repeatCount="indefinite"/>
+      <rect x="320" y="140" width="160" height="50" rx="5" fill="url(#newVideoGrad)" stroke="#2d8659" stroke-width="2"/>
+      <text x="400" y="170" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">New Video 1</text>
+    </g>
+  </g>
+  
+  <!-- Video 2 slot -->
+  <g id="video2">
+    <!-- Old Video 2 -->
+    <g>
+      <animate attributeName="opacity" values="1;1;1;1;1;0;0;0;0;0;0;0;1" keyTimes="0;0.1;0.2;0.3;0.35;0.4;0.45;0.55;0.65;0.75;0.85;0.95;1" dur="12s" repeatCount="indefinite"/>
+      <rect x="320" y="200" width="160" height="50" rx="5" fill="url(#videoGrad)" stroke="#2e5f8a" stroke-width="2"/>
+      <text x="400" y="230" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">Video 2</text>
+    </g>
+    <!-- New Video 2 -->
+    <g>
+      <animate attributeName="opacity" values="0;0;0;0;0;0;1;1;1;1;1;0;0" keyTimes="0;0.35;0.4;0.45;0.5;0.55;0.6;0.65;0.75;0.85;0.9;0.95;1" dur="12s" repeatCount="indefinite"/>
+      <rect x="320" y="200" width="160" height="50" rx="5" fill="url(#newVideoGrad)" stroke="#2d8659" stroke-width="2"/>
+      <text x="400" y="230" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">New Video 2</text>
+    </g>
+  </g>
+  
+  <!-- Video 3 slot -->
+  <g id="video3">
+    <!-- Old Video 3 -->
+    <g>
+      <animate attributeName="opacity" values="1;1;1;1;1;1;1;1;0;0;0;0;1" keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;0.65;0.7;0.75;0.85;0.95;1" dur="12s" repeatCount="indefinite"/>
+      <rect x="320" y="260" width="160" height="50" rx="5" fill="url(#videoGrad)" stroke="#2e5f8a" stroke-width="2"/>
+      <text x="400" y="290" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">Video 3</text>
+    </g>
+    <!-- New Video 3 -->
+    <g>
+      <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;1;1;0;0" keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;0.7;0.75;0.8;0.9;0.95;1" dur="12s" repeatCount="indefinite"/>
+      <rect x="320" y="260" width="160" height="50" rx="5" fill="url(#newVideoGrad)" stroke="#2d8659" stroke-width="2"/>
+      <text x="400" y="290" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">New Video 3</text>
+    </g>
+  </g>
+  
+</svg>
