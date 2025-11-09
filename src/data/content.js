@@ -62,10 +62,10 @@ const projectsData = [
     tags: ["ai", "neuroscience"]
   },
   {
-    title: "Felicity: Langfuse Monitoring",
+    title: "Felicity: Scientific Prompt Development",
     description: "LLM Experimentation, Deployment, Regresssion Tracking, Dataset Development",
     image: getImagePath("/langfuse.svg"),
-    link: "#",
+    link: "/projects/felicity-langfuse",
     tags: ["engineering"]
   },
   {
