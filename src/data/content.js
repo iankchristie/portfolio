@@ -100,7 +100,7 @@ const projectsData = [
     title: "Google: The Physical Web",
     description: "Long Deprecated Bluetooth Beacon Integration with Chrome",
     image: getImagePath("/chrome.svg"),
-    link: "#",
+    link: "/projects/physical-web",
     tags: ["engineering"]
   },
     {
