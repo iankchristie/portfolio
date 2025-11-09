@@ -77,9 +77,9 @@ const projectsData = [
   },
   {
     title: "Square: Go Elastic Search",
-    description: "Elastic Search for Consumer Bookings App",
+    description: "Before there was AI, there was Elastic Search",
     image: getImagePath("/square_go.webp"),
-    link: "#",
+    link: "/projects/square-go-elastic-search",
     tags: ["engineering"]
   },
   {
