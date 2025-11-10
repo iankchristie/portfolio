@@ -13,7 +13,8 @@ export const heroContent = {
   name: "Ian Christie",
   subtitle: "Software Engineer - Researcher",
   bio: [
-    "I'm passionate about Software Engineering, AI, Earth Science, Remote Sensing, and the intersection of technology & nature. When I'm not doing those things, I'm outside playing.",
+    "Masters student with 8 years of experience in Big and Small Tech.",
+    "I'm passionate about Software Engineering, AI, Earth Science, Remote Sensing, and the intersection of technology & nature.",
     "Raised in Houston, currently based out of San Francisco and Boulder. "
   ]
 };

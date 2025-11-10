@@ -18,6 +18,8 @@ export function GeoClimb() {
         margin: '0 auto',
         padding: 'clamp(1rem, 3vw, 2rem)'
       }}>
+        <ProjectNavigation currentLink="/projects/geoclimb" position="top" />
+
         <h1 style={{
           fontSize: 'clamp(2.5rem, 5vw, 3.5rem)',
           marginBottom: '1rem',
@@ -34,8 +36,6 @@ export function GeoClimb() {
         }}>
           Geologic Foundation Model Aimed at Detecting Novel Climbing Areas
         </p>
-
-        <ProjectNavigation currentLink="/projects/geoclimb" />
 
         <div style={{
           fontSize: 'clamp(1rem, 2vw, 1.125rem)',

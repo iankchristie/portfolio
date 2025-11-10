@@ -9,6 +9,8 @@ export function FelicityLangfuse() {
         margin: '0 auto',
         padding: 'clamp(1rem, 3vw, 2rem)'
       }}>
+        <ProjectNavigation currentLink="/projects/felicity-langfuse" position="top" />
+
         <h1 style={{
           fontSize: 'clamp(2.5rem, 5vw, 3.5rem)',
           marginBottom: '1rem',
@@ -25,8 +27,6 @@ export function FelicityLangfuse() {
         }}>
           LLM Experimentation, Deployment, Regression Tracking, Dataset Development
         </p>
-
-        <ProjectNavigation currentLink="/projects/felicity-langfuse" />
 
         <div style={{
           width: '100%',

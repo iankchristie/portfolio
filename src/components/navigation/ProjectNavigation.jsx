@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { projectsWithPages } from '../../data/content';
 
-export function ProjectNavigation({ currentLink }) {
+export function ProjectNavigation({ currentLink, position = 'bottom' }) {
   // Find the current project index
   const currentIndex = projectsWithPages.findIndex(project => project.link === currentLink);
 
@@ -15,39 +15,47 @@ export function ProjectNavigation({ currentLink }) {
       display: 'flex',
       justifyContent: 'space-between',
       alignItems: 'center',
-      gap: '1rem',
-      padding: '1.5rem 0',
-      borderTop: '1px solid #e0e0e0',
-      borderBottom: '1px solid #e0e0e0',
-      marginBottom: '2rem'
+      gap: '2rem',
+      ...(position === 'top' ? {
+        padding: '0 0 2rem 0',
+        marginBottom: '1rem'
+      } : {
+        padding: '3rem 0 0 0',
+        marginTop: '2rem',
+      })
     },
     button: {
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'flex-start',
-      padding: '1rem',
-      borderRadius: '8px',
-      backgroundColor: '#f5f5f5',
+      gap: '0.5rem',
       textDecoration: 'none',
-      color: '#1a1a1a',
+      color: '#666',
       transition: 'all 0.2s ease',
       maxWidth: '45%',
       flex: '1'
     },
     buttonHover: {
-      backgroundColor: '#e8e8e8',
-      transform: 'translateY(-2px)'
+      color: '#1a1a1a'
     },
     label: {
       fontSize: '0.875rem',
-      color: '#666',
-      marginBottom: '0.25rem',
-      fontWeight: '500'
+      color: 'inherit',
+      fontWeight: '400',
+      display: 'flex',
+      alignItems: 'center',
+      gap: '0.5rem'
     },
     title: {
-      fontSize: '1rem',
+      fontSize: '1.125rem',
       fontWeight: '600',
-      color: '#1a1a1a'
+      color: '#1a1a1a',
+      lineHeight: '1.4'
+    },
+    arrow: {
+      fontSize: '1rem',
+      display: 'inline-block',
+      transition: 'transform 0.2s ease'
     },
     spacer: {
       flex: '1',
@@ -62,15 +70,20 @@ export function ProjectNavigation({ currentLink }) {
           to={prevProject.link}
           style={navStyles.button}
           onMouseEnter={(e) => {
-            e.currentTarget.style.backgroundColor = navStyles.buttonHover.backgroundColor;
-            e.currentTarget.style.transform = navStyles.buttonHover.transform;
+            e.currentTarget.style.color = navStyles.buttonHover.color;
+            const arrow = e.currentTarget.querySelector('[data-arrow="prev"]');
+            if (arrow) arrow.style.transform = 'translateX(-4px)';
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.backgroundColor = navStyles.button.backgroundColor;
-            e.currentTarget.style.transform = 'none';
+            e.currentTarget.style.color = navStyles.button.color;
+            const arrow = e.currentTarget.querySelector('[data-arrow="prev"]');
+            if (arrow) arrow.style.transform = 'translateX(0)';
           }}
         >
-          <span style={navStyles.label}>← Previous</span>
+          <span style={navStyles.label}>
+            <span style={navStyles.arrow} data-arrow="prev">←</span>
+            Previous
+          </span>
           <span style={navStyles.title}>{prevProject.title}</span>
         </Link>
       ) : (
@@ -80,17 +93,22 @@ export function ProjectNavigation({ currentLink }) {
       {nextProject ? (
         <Link
           to={nextProject.link}
-          style={{...navStyles.button, alignItems: 'flex-end'}}
+          style={{...navStyles.button, alignItems: 'flex-end', textAlign: 'right'}}
           onMouseEnter={(e) => {
-            e.currentTarget.style.backgroundColor = navStyles.buttonHover.backgroundColor;
-            e.currentTarget.style.transform = navStyles.buttonHover.transform;
+            e.currentTarget.style.color = navStyles.buttonHover.color;
+            const arrow = e.currentTarget.querySelector('[data-arrow="next"]');
+            if (arrow) arrow.style.transform = 'translateX(4px)';
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.backgroundColor = navStyles.button.backgroundColor;
-            e.currentTarget.style.transform = 'none';
+            e.currentTarget.style.color = navStyles.button.color;
+            const arrow = e.currentTarget.querySelector('[data-arrow="next"]');
+            if (arrow) arrow.style.transform = 'translateX(0)';
           }}
         >
-          <span style={navStyles.label}>Next →</span>
+          <span style={navStyles.label}>
+            Next
+            <span style={navStyles.arrow} data-arrow="next">→</span>
+          </span>
           <span style={navStyles.title}>{nextProject.title}</span>
         </Link>
       ) : (

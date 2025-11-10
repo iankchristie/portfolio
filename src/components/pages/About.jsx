@@ -52,7 +52,12 @@ export function About() {
           </p>
 
           <p style={{ marginBottom: '1.5rem' }}>
-            The 2020 California wildfire season was a real turning point. The "Orange Day" in San Francisco was an almost spiritual experience that convinced me I needed to make a change and lead a more values-oriented life. I bought a van, converted it into a camper, and started splitting my time between San Francisco and the Sierra Nevada, all while continuing my full-time job.
+            I try to go above and beyond my role as a software engineer. At Square I planned 3 team offsites, won multiple hackathons, onboarded junior engineers and interns, frequently presented internally, and conducted over 150+ interviews. I strongly believe that engineering and research are collaborative disciplines.
+          </p>
+
+
+          <p style={{ marginBottom: '1.5rem' }}>
+            The 2020 California wildfire season was a real turning point. The "Orange Day" in San Francisco was an almost spiritual experience that convinced me I needed to make a values oriented change. I bought a van, converted it into a camper, and started splitting my time between San Francisco and the Sierra Nevada, all while continuing my full-time job.
           </p>
 
           <p style={{ marginBottom: '1.5rem' }}>

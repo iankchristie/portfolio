@@ -9,6 +9,8 @@ export function YouTubeSync() {
         margin: '0 auto',
         padding: 'clamp(1rem, 3vw, 2rem)'
       }}>
+        <ProjectNavigation currentLink="/projects/youtube-sync" position="top" />
+
         <h1 style={{
           fontSize: 'clamp(2.5rem, 5vw, 3.5rem)',
           marginBottom: '1rem',
@@ -25,8 +27,6 @@ export function YouTubeSync() {
         }}>
           Video Interleaving for Continuous Offline Content
         </p>
-
-        <ProjectNavigation currentLink="/projects/youtube-sync" />
 
         <div style={{
           fontSize: 'clamp(1rem, 2vw, 1.125rem)',

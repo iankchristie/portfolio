@@ -4,34 +4,28 @@ import { projects } from '../../data/content';
 import { ProjectCard } from '../common/ProjectCard';
 
 export function Projects() {
-  const [selectedTags, setSelectedTags] = useState([]);
+  const [selectedTag, setSelectedTag] = useState(null);
 
   // Get unique tags from all projects
   const allTags = [...new Set(projects.flatMap(project => project.tags))];
 
-  // Filter projects based on selected tags
-  const filteredProjects = selectedTags.length === 0
+  // Filter projects based on selected tag
+  const filteredProjects = selectedTag === null
     ? projects
-    : projects.filter(project =>
-        selectedTags.some(tag => project.tags.includes(tag))
-      );
+    : projects.filter(project => project.tags.includes(selectedTag));
 
-  const toggleTag = (tag) => {
+  const selectTag = (tag) => {
     if (tag === 'all') {
-      // When "All" is clicked, clear all selected tags
-      setSelectedTags([]);
+      // When "All" is clicked, clear selected tag
+      setSelectedTag(null);
     } else {
-      // When any other tag is clicked, toggle it
-      setSelectedTags(prev =>
-        prev.includes(tag)
-          ? prev.filter(t => t !== tag)
-          : [...prev, tag]
-      );
+      // When any other tag is clicked, select only that tag
+      setSelectedTag(tag);
     }
   };
 
-  // Check if "All" should be considered selected (when no tags are selected)
-  const isAllSelected = selectedTags.length === 0;
+  // Check if "All" should be considered selected (when no tag is selected)
+  const isAllSelected = selectedTag === null;
 
   return (
     <Layout>
@@ -59,7 +53,7 @@ export function Projects() {
         }}>
           {/* All button */}
           <button
-            onClick={() => toggleTag('all')}
+            onClick={() => selectTag('all')}
             style={{
               padding: '0.5rem 1.5rem',
               backgroundColor: isAllSelected ? '#1a1a1a' : 'white',
@@ -89,11 +83,11 @@ export function Projects() {
           {allTags.map(tag => (
             <button
               key={tag}
-              onClick={() => toggleTag(tag)}
+              onClick={() => selectTag(tag)}
               style={{
                 padding: '0.5rem 1.5rem',
-                backgroundColor: selectedTags.includes(tag) ? '#1a1a1a' : 'white',
-                color: selectedTags.includes(tag) ? 'white' : '#1a1a1a',
+                backgroundColor: selectedTag === tag ? '#1a1a1a' : 'white',
+                color: selectedTag === tag ? 'white' : '#1a1a1a',
                 border: '2px solid #1a1a1a',
                 borderRadius: '24px',
                 fontSize: '1rem',
@@ -102,12 +96,12 @@ export function Projects() {
                 textTransform: 'capitalize'
               }}
               onMouseOver={(e) => {
-                if (!selectedTags.includes(tag)) {
+                if (selectedTag !== tag) {
                   e.target.style.backgroundColor = '#f5f5f5';
                 }
               }}
               onMouseOut={(e) => {
-                if (!selectedTags.includes(tag)) {
+                if (selectedTag !== tag) {
                   e.target.style.backgroundColor = 'white';
                 }
               }}

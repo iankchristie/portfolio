@@ -9,6 +9,8 @@ export function SmallScaleMining() {
         margin: '0 auto',
         padding: 'clamp(1rem, 3vw, 2rem)'
       }}>
+        <ProjectNavigation currentLink="/projects/small-scale-mining" position="top" />
+
         <h1 style={{
           fontSize: 'clamp(2.5rem, 5vw, 3.5rem)',
           marginBottom: '1rem',
@@ -25,8 +27,6 @@ export function SmallScaleMining() {
         }}>
           Semantic Segmentation Model of Remote Sensing Data
         </p>
-
-        <ProjectNavigation currentLink="/projects/small-scale-mining" />
 
         <div style={{
           fontSize: 'clamp(1rem, 2vw, 1.125rem)',
