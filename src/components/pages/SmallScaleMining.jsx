@@ -48,7 +48,7 @@ export function SmallScaleMining() {
           </h2>
 
           <p style={{ marginBottom: '1.5rem' }}>
-            This project builds on the group's earlier work: <a href="https://www.nber.org/system/files/working_papers/w33646/w33646.pdf" target="_blank" rel="noopener noreferrer" style={{ color: '#1a1a1a', textDecoration: 'underline' }}>https://www.nber.org/system/files/working_papers/w33646/w33646.pdf</a>
+            This project builds on the group's earlier work: <a href="https://www.nber.org/system/files/working_papers/w33646/w33646.pdf" target="_blank" rel="noopener noreferrer" style={{ color: '#1a1a1a', textDecoration: 'underline', wordBreak: 'break-all' }}>https://www.nber.org/system/files/working_papers/w33646/w33646.pdf</a>
           </p>
 
           <p style={{ marginBottom: '1.5rem' }}>
@@ -61,7 +61,7 @@ export function SmallScaleMining() {
 
           <div style={{
             width: '100%',
-            maxWidth: '50%',
+            maxWidth: '600px',
             margin: '2rem auto',
           }}>
             <img
@@ -168,7 +168,7 @@ export function SmallScaleMining() {
 
           <div style={{
             width: '100%',
-            maxWidth: '50%',
+            maxWidth: '600px',
             margin: '1rem auto 2rem auto',
           }}>
             <img
@@ -198,7 +198,7 @@ export function SmallScaleMining() {
 
           <div style={{
             width: '100%',
-            maxWidth: '50%',
+            maxWidth: '600px',
             margin: '1rem auto 2rem auto',
           }}>
             <img
@@ -241,7 +241,7 @@ export function SmallScaleMining() {
 
           <div style={{
             width: '100%',
-            maxWidth: '50%',
+            maxWidth: '600px',
             margin: '1rem auto 2rem auto',
           }}>
             <img
@@ -271,7 +271,7 @@ export function SmallScaleMining() {
 
           <div style={{
             width: '100%',
-            maxWidth: '50%',
+            maxWidth: '600px',
             margin: '1rem auto 2rem auto',
           }}>
             <img
@@ -314,7 +314,7 @@ export function SmallScaleMining() {
 
           <div style={{
             width: '100%',
-            maxWidth: '50%',
+            maxWidth: '600px',
             margin: '2rem auto',
           }}>
             <img
@@ -357,7 +357,7 @@ export function SmallScaleMining() {
 
           <div style={{
             width: '100%',
-            maxWidth: '50%',
+            maxWidth: '600px',
             margin: '2rem auto',
           }}>
             <img
@@ -397,7 +397,7 @@ export function SmallScaleMining() {
 
           <div style={{
             width: '100%',
-            maxWidth: '50%',
+            maxWidth: '600px',
             margin: '1rem auto 2rem auto',
           }}>
             <img
@@ -418,7 +418,7 @@ export function SmallScaleMining() {
 
           <div style={{
             width: '100%',
-            maxWidth: '50%',
+            maxWidth: '600px',
             margin: '1rem auto 2rem auto',
           }}>
             <img
@@ -439,7 +439,7 @@ export function SmallScaleMining() {
 
           <div style={{
             width: '100%',
-            maxWidth: '50%',
+            maxWidth: '600px',
             margin: '1rem auto 2rem auto',
           }}>
             <img

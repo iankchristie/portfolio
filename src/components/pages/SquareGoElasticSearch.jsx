@@ -47,7 +47,7 @@ export function SquareGoElasticSearch() {
 
   <div style={{
     width: '100%',
-    maxWidth: '50%',
+    maxWidth: '600px',
     margin: '2rem auto',
   }}>
     <img
@@ -74,8 +74,12 @@ export function SquareGoElasticSearch() {
     Internally, Elasticsearch transforms data into an inverted index—a structure tailored for fast text search. That meant when a user typed something like "haircut" or "massage," Elasticsearch didn't need to scan every record. It already had a map of terms to merchants, so matching was effectively instantaneous. For location-based queries, Elasticsearch stores geospatial data using specialized data types that can quickly compute a bounding box or radius search, returning only merchants within the target area.
   </p>
 
-  <div style={{ marginBottom: '1.5rem', position: 'relative' }}>
-    <div style={{ position: 'relative' }}>
+  <div style={{ marginBottom: '1.5rem' }}>
+    <div style={{
+      position: 'relative',
+      width: '100%',
+      overflow: 'hidden'
+    }}>
       <pre style={{
         backgroundColor: '#f5f5f5',
         padding: '1.5rem',
@@ -85,8 +89,11 @@ export function SquareGoElasticSearch() {
         lineHeight: '1.6',
         border: '1px solid #e0e0e0',
         maxHeight: isCodeExpanded ? 'none' : '150px',
-        overflow: 'hidden',
-        position: 'relative'
+        overflowY: 'hidden',
+        maxWidth: '100%',
+        boxSizing: 'border-box',
+        margin: 0,
+        whiteSpace: 'pre'
       }}>
         <code>{`{
   "query": {
@@ -175,7 +182,7 @@ export function SquareGoElasticSearch() {
 
   <div style={{
     width: '100%',
-    maxWidth: '50%',
+    maxWidth: '600px',
     margin: '2rem auto',
   }}>
     <img
