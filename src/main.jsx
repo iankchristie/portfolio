@@ -18,6 +18,7 @@ import { FelicityLangfuse } from './components/pages/FelicityLangfuse.jsx'
 import { YouTubeSync } from './components/pages/YouTubeSync.jsx'
 import { PhysicalWeb } from './components/pages/PhysicalWeb.jsx'
 import { GoldmanSachs } from './components/pages/GoldmanSachs.jsx'
+import { SquareAndroid } from './components/pages/SquareAndroid.jsx'
 import { ScrollToTop } from './components/common/ScrollToTop.jsx'
 
 // Component to handle 404 redirects from GitHub Pages
@@ -56,6 +57,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/projects/youtube-sync" element={<YouTubeSync />} />
         <Route path="/projects/physical-web" element={<PhysicalWeb />} />
         <Route path="/projects/goldman-sachs" element={<GoldmanSachs />} />
+        <Route path="/projects/square-android" element={<SquareAndroid />} />
         <Route path="/project/:id" element={<UnderConstruction />} />
         <Route path="/under-construction" element={<UnderConstruction />} />
         <Route path="/contact" element={<Contact />} />

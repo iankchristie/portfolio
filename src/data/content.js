@@ -83,10 +83,10 @@ const projectsData = [
     tags: ["engineering"]
   },
   {
-    title: "Square: Android Architecture",
-    description: "Overview of Android Architecture at Square",
+    title: "Square: Fully Reactive Android App",
+    description: "Overview of Android Architecture at Square Appointments",
     image: getImagePath("/jack.png"),
-    link: "#",
+    link: "/projects/square-android",
     tags: ["engineering"]
   },
   {
