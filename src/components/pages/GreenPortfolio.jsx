@@ -1,4 +1,5 @@
 import { Layout } from '../layout/Layout';
+import { ProjectNavigation } from '../navigation/ProjectNavigation';
 
 export function GreenPortfolio() {
   return (
@@ -24,6 +25,8 @@ export function GreenPortfolio() {
         }}>
           GCP Environment Setup using Terraform
         </p>
+
+        <ProjectNavigation currentLink="/projects/greenportfolio" />
 
         <div style={{
           fontSize: 'clamp(1rem, 2vw, 1.125rem)',
@@ -144,6 +147,8 @@ export function GreenPortfolio() {
             I'm quite proud of this work. It was my first time building such a devops system from scratch and I really enjoyed the process.
           </p>
         </div>
+
+        <ProjectNavigation currentLink="/projects/greenportfolio" />
       </div>
     </Layout>
   );

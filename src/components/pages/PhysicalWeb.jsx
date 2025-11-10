@@ -1,4 +1,5 @@
 import { Layout } from '../layout/Layout';
+import { ProjectNavigation } from '../navigation/ProjectNavigation';
 
 export function PhysicalWeb() {
   return (
@@ -24,6 +25,8 @@ export function PhysicalWeb() {
         }}>
           Bluetooth Beacon Integration with Chrome
         </p>
+
+        <ProjectNavigation currentLink="/projects/physical-web" />
 
         <div style={{
           fontSize: 'clamp(1rem, 2vw, 1.125rem)',
@@ -128,6 +131,8 @@ export function PhysicalWeb() {
             After leaving Google, I took a box of unused beacons and loaded my old personal website onto them. Then I left the beacons scattered across random locations in San Francisco, hoping to generate a little stir. Realistically, the product was so unpopular that I doubt anyone ever saw a notification. You had to opt-in. The service may have been shut down before I even deployed them—and if not, my domain was probably blocklisted immediately. But I still like to think I gave a few strangers a moment of confusion and some former coworkers a good laugh.
           </p>
         </div>
+
+        <ProjectNavigation currentLink="/projects/physical-web" />
       </div>
     </Layout>
   );

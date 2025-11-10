@@ -1,4 +1,5 @@
 import { Layout } from '../layout/Layout';
+import { ProjectNavigation } from '../navigation/ProjectNavigation';
 
 export function CorticalPlasticity() {
   return (
@@ -24,6 +25,8 @@ export function CorticalPlasticity() {
         }}>
           NeuroBiologic Model for the Development of Direction Selectivity
         </p>
+
+        <ProjectNavigation currentLink="/projects/cortical-plasticity" />
 
         <div style={{
           fontSize: 'clamp(1rem, 2vw, 1.125rem)',
@@ -53,6 +56,8 @@ export function CorticalPlasticity() {
             title="Cortical Plasticity Research Paper"
           />
         </div>
+
+        <ProjectNavigation currentLink="/projects/cortical-plasticity" />
       </div>
     </Layout>
   );

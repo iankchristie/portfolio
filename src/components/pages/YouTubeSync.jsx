@@ -1,4 +1,5 @@
 import { Layout } from '../layout/Layout';
+import { ProjectNavigation } from '../navigation/ProjectNavigation';
 
 export function YouTubeSync() {
   return (
@@ -24,6 +25,8 @@ export function YouTubeSync() {
         }}>
           Video Interleaving for Continuous Offline Content
         </p>
+
+        <ProjectNavigation currentLink="/projects/youtube-sync" />
 
         <div style={{
           fontSize: 'clamp(1rem, 2vw, 1.125rem)',
@@ -123,6 +126,8 @@ export function YouTubeSync() {
             I hope some of those hours made people better.
           </p>
         </div>
+
+        <ProjectNavigation currentLink="/projects/youtube-sync" />
       </div>
     </Layout>
   );

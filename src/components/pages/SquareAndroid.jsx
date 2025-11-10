@@ -1,4 +1,5 @@
 import { Layout } from '../layout/Layout';
+import { ProjectNavigation } from '../navigation/ProjectNavigation';
 
 export function SquareAndroid() {
   return (
@@ -24,6 +25,8 @@ export function SquareAndroid() {
         }}>
           Overview of Android Architecture at Square Appointments
         </p>
+
+        <ProjectNavigation currentLink="/projects/square-android" />
 
         <div style={{
           fontSize: 'clamp(1rem, 2vw, 1.125rem)',
@@ -181,6 +184,8 @@ export function SquareAndroid() {
             No manual refresh, no stale data, no conflicts.
           </p>
         </div>
+
+        <ProjectNavigation currentLink="/projects/square-android" />
       </div>
     </Layout>
   );

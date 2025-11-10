@@ -1,4 +1,5 @@
 import { Layout } from '../layout/Layout';
+import { ProjectNavigation } from '../navigation/ProjectNavigation';
 
 export function Ohmward() {
   return (
@@ -33,6 +34,8 @@ export function Ohmward() {
         }}>
           This paper was accepted and presented at the IEEE PES ISGT EUROPE 2025 conference in Malta.
         </p>
+
+        <ProjectNavigation currentLink="/projects/ohmward" />
 
         <div style={{
           fontSize: 'clamp(1rem, 2vw, 1.125rem)',
@@ -278,6 +281,8 @@ export function Ohmward() {
             </p>
           </blockquote>
         </div>
+
+        <ProjectNavigation currentLink="/projects/ohmward" />
       </div>
     </Layout>
   );

@@ -46,7 +46,7 @@ body {
     top: 0;
     left: 100%;
     transform: translateX(-62%);
-    width: 500px;
+    width: 425px;
     height: auto;
     z-index: 10;
     opacity: 0;
@@ -352,7 +352,7 @@ body {
     }
 
     .rappeller {
-        width: 300px;
+        width: 255px;
     }
 
     .header {

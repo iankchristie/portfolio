@@ -1,4 +1,5 @@
 import { Layout } from '../layout/Layout';
+import { ProjectNavigation } from '../navigation/ProjectNavigation';
 
 export function GeoClimb() {
   // Images from the geo_climb folder
@@ -33,6 +34,8 @@ export function GeoClimb() {
         }}>
           Geologic Foundation Model Aimed at Detecting Novel Climbing Areas
         </p>
+
+        <ProjectNavigation currentLink="/projects/geoclimb" />
 
         <div style={{
           fontSize: 'clamp(1rem, 2vw, 1.125rem)',
@@ -152,6 +155,8 @@ export function GeoClimb() {
             title="GeoClimb Midpoint Research Paper"
           />
         </div>
+
+        <ProjectNavigation currentLink="/projects/geoclimb" />
       </div>
     </Layout>
   );

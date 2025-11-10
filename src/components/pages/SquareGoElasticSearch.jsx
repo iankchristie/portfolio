@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Layout } from '../layout/Layout';
+import { ProjectNavigation } from '../navigation/ProjectNavigation';
 
 export function SquareGoElasticSearch() {
   const [isCodeExpanded, setIsCodeExpanded] = useState(false);
@@ -27,6 +28,8 @@ export function SquareGoElasticSearch() {
         }}>
           Before AI there was Elastic Search
         </p>
+
+        <ProjectNavigation currentLink="/projects/square-go-elastic-search" />
 
 <div style={{
   fontSize: 'clamp(1rem, 2vw, 1.125rem)',
@@ -190,7 +193,10 @@ export function SquareGoElasticSearch() {
   <p style={{ marginBottom: '1.5rem' }}>
     In practice, this architecture gave us a fast, resilient, fault-tolerant read layer capable of handling consumer traffic with very low latency. It turned what would have been slow queries—full-table scans, geo-filters, fuzzy text matching—into sub-second searches across millions of listings. And because Elasticsearch clusters can scale simply by adding nodes, the system was ready for national rollout.
   </p>
-</div>      </div>
+</div>
+
+        <ProjectNavigation currentLink="/projects/square-go-elastic-search" />
+      </div>
     </Layout>
   );
 }

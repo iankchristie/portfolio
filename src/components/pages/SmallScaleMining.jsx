@@ -1,4 +1,5 @@
 import { Layout } from '../layout/Layout';
+import { ProjectNavigation } from '../navigation/ProjectNavigation';
 
 export function SmallScaleMining() {
   return (
@@ -24,6 +25,8 @@ export function SmallScaleMining() {
         }}>
           Semantic Segmentation Model of Remote Sensing Data
         </p>
+
+        <ProjectNavigation currentLink="/projects/small-scale-mining" />
 
         <div style={{
           fontSize: 'clamp(1rem, 2vw, 1.125rem)',
@@ -451,6 +454,8 @@ export function SmallScaleMining() {
             />
           </div>
         </div>
+
+        <ProjectNavigation currentLink="/projects/small-scale-mining" />
       </div>
     </Layout>
   );

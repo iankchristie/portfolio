@@ -1,4 +1,5 @@
 import { Layout } from '../layout/Layout';
+import { ProjectNavigation } from '../navigation/ProjectNavigation';
 
 export function BrowserAutomations() {
   return (
@@ -24,6 +25,8 @@ export function BrowserAutomations() {
         }}>
           LLM Structured Outputs into an Abstract Syntax Tree DSL
         </p>
+
+        <ProjectNavigation currentLink="/projects/browser-automations" />
 
         <div style={{
           fontSize: 'clamp(1rem, 2vw, 1.125rem)',
@@ -164,6 +167,8 @@ export function BrowserAutomations() {
             />
           </div>
         </div>
+
+        <ProjectNavigation currentLink="/projects/browser-automations" />
       </div>
     </Layout>
   );

@@ -1,4 +1,5 @@
 import { Layout } from '../layout/Layout';
+import { ProjectNavigation } from '../navigation/ProjectNavigation';
 
 export function GoldmanSachs() {
   return (
@@ -25,6 +26,8 @@ export function GoldmanSachs() {
           The Single Time I've Used AngularJS
         </p>
 
+        <ProjectNavigation currentLink="/projects/goldman-sachs" />
+
         <div style={{
           fontSize: 'clamp(1rem, 2vw, 1.125rem)',
           lineHeight: '1.8',
@@ -43,6 +46,8 @@ export function GoldmanSachs() {
             Still, it was a good summer and a good place to turn 21. I did well and got a return offer, but I left knowing the lifestyle wasn't for me.
           </p>
         </div>
+
+        <ProjectNavigation currentLink="/projects/goldman-sachs" />
       </div>
     </Layout>
   );

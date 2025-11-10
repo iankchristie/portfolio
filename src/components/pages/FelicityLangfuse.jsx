@@ -1,4 +1,5 @@
 import { Layout } from '../layout/Layout';
+import { ProjectNavigation } from '../navigation/ProjectNavigation';
 
 export function FelicityLangfuse() {
   return (
@@ -24,6 +25,8 @@ export function FelicityLangfuse() {
         }}>
           LLM Experimentation, Deployment, Regression Tracking, Dataset Development
         </p>
+
+        <ProjectNavigation currentLink="/projects/felicity-langfuse" />
 
         <div style={{
           width: '100%',
@@ -112,6 +115,8 @@ export function FelicityLangfuse() {
             real usage → monitoring → new test data → prompt refinement → redeployment → safer automations.
           </p>
         </div>
+
+        <ProjectNavigation currentLink="/projects/felicity-langfuse" />
       </div>
     </Layout>
   );

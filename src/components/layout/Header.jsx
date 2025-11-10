@@ -33,6 +33,12 @@ export function Header() {
             <circle cx="4" cy="4" r="2"></circle>
           </svg>
         </a>
+        <a href="https://scholar.google.com/citations?user=BtyVZE0AAAAJ" target="_blank" rel="noopener noreferrer" className="icon-btn" aria-label="Google Scholar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+          </svg>
+        </a>
         <Link to="/contact" className="icon-btn" aria-label="Contact">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>

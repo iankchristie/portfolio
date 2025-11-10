@@ -11,7 +11,7 @@ export const getImagePath = (path) => {
 
 export const heroContent = {
   name: "Ian Christie",
-  subtitle: "Software Engineer - Researcher - Fun Haver",
+  subtitle: "Software Engineer - Researcher",
   bio: [
     "I'm passionate about Software Engineering, AI, Earth Science, Remote Sensing, and the intersection of technology & nature. When I'm not doing those things, I'm outside playing.",
     "Raised in Houston, currently based out of San Francisco and Boulder. "
@@ -228,3 +228,6 @@ export const personalProjects = allProjects.filter(project => project.tags.inclu
 
 // Export all projects for reference
 export const projects = allProjects;
+
+// Export projects with actual pages (for navigation)
+export const projectsWithPages = allProjects.filter(project => project.link && !project.link.includes("#"));
