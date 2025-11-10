@@ -103,6 +103,14 @@ const projectsData = [
     link: "/projects/physical-web",
     tags: ["engineering"]
   },
+  {
+    title: "Goldman Sachs: Internship",
+    description: "The Single Time I've Used AngularJS",
+    image: getImagePath("/goldman.png"),
+    link: "/projects/goldman-sachs",
+    tags: ["engineering"]
+  },
+
     {
     title: "Square: GDPR Compliance",
     description: "Durable System for PII Tracking",
