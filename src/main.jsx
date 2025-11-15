@@ -16,6 +16,7 @@ import { LostArrowSpire } from './components/pages/LostArrowSpire.jsx'
 import { HalfDome } from './components/pages/HalfDome.jsx'
 import { TuolumneTripleCrown } from './components/pages/TuolumneTripleCrown.jsx'
 import { Kilimanjaro } from './components/pages/Kilimanjaro.jsx'
+import { Patagonia } from './components/pages/Patagonia.jsx'
 import { Projects } from './components/pages/Projects.jsx'
 import { GeoClimb } from './components/pages/GeoClimb.jsx'
 import { CorticalPlasticity } from './components/pages/CorticalPlasticity.jsx'
@@ -66,6 +67,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/half-dome" element={<HalfDome />} />
         <Route path="/tuolumne-triple-crown" element={<TuolumneTripleCrown />} />
         <Route path="/kilimanjaro" element={<Kilimanjaro />} />
+        <Route path="/patagonia" element={<Patagonia />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/geoclimb" element={<GeoClimb />} />
         <Route path="/projects/cortical-plasticity" element={<CorticalPlasticity />} />

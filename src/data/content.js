@@ -207,7 +207,7 @@ const projectsData = [
     title: "Patagonia",
     description: "A semester in Patagonia",
     image: getImagePath("/nols.JPG"),
-    link: "#",
+    link: "/patagonia",
     tags: ["personal", "outdoors"]
   },
   {
