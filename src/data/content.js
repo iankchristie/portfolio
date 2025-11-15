@@ -200,7 +200,7 @@ const projectsData = [
     title: "Kilimanjaro",
     description: "The Tallest Mountain in Africa with Pops",
     image: getImagePath("kilimanjaro.jpg"),
-    link: "#",
+    link: "/kilimanjaro",
     tags: ["personal", "outdoors"]
   },
   {
