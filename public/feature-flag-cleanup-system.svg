@@ -1,0 +1,89 @@
+<svg viewBox="0 0 1000 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font: bold 24px sans-serif; fill: #1a1a1a; }
+      .subtitle { font: bold 16px sans-serif; fill: #2c3e50; }
+      .label { font: 14px sans-serif; fill: #2c3e50; }
+      .small-label { font: 12px sans-serif; fill: #555; }
+      .code { font: 12px monospace; fill: #c7254e; }
+      .problem { fill: #ff6b6b; }
+      .solution { fill: #51cf66; }
+      .neutral { fill: #e9ecef; }
+      .border { fill: none; stroke: #dee2e6; stroke-width: 2; }
+      .arrow { fill: none; stroke: #495057; stroke-width: 2; marker-end: url(#arrowhead); }
+      .dashed { stroke-dasharray: 5,5; }
+    </style>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#495057" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="500" y="35" text-anchor="middle" class="title">Feature Flag Cleanup System</text>
+
+  <!-- AFTER Section -->
+  <g id="after-section">
+    <rect x="330" y="60" width="400" height="240" rx="8" class="solution" opacity="0.1" stroke="#51cf66" stroke-width="2"/>
+    <text x="530" y="85" text-anchor="middle" class="subtitle">Extended Config</text>
+    
+    <!-- New Config Example -->
+    <rect x="360" y="110" width="340" height="175" rx="4" fill="#f8f9fa" stroke="#51cf66" stroke-width="2"/>
+    <text x="370" y="130" class="code" font-size="11">feature_flags.yml</text>
+    <line x1="370" y1="135" x2="690" y2="135" stroke="#dee2e6" stroke-width="1"/>
+    
+    <text x="370" y="155" class="code">- name: new_ui</text>
+    <text x="370" y="175" class="code">  enabled: true</text>
+    <text x="370" y="195" class="code" fill="#51cf66" font-weight="bold">  owner: alice.smith</text>
+    <text x="370" y="215" class="code" fill="#51cf66" font-weight="bold">  clean_by: 2024-06-15</text>
+    
+    <text x="370" y="240" class="code">- name: beta_api</text>
+    <text x="370" y="260" class="code">  enabled: false</text>
+    <text x="370" y="280" class="code" opacity="0.5">  # ...</text>
+    
+    <!-- Annotations -->
+    <line x1="510" y1="195" x2="580" y2="195" stroke="#51cf66" stroke-width="1.5"/>
+    <text x="585" y="199" class="small-label" fill="#51cf66">Slack LDAP</text>
+    
+    <line x1="540" y1="215" x2="580" y2="215" stroke="#51cf66" stroke-width="1.5"/>
+    <text x="585" y="219" class="small-label" fill="#51cf66">Deadline</text>
+  </g>
+
+  <!-- Automation Section -->
+  <g id="automation-section">
+    <rect x="50" y="340" width="900" height="200" rx="8" fill="#fff9e6" stroke="#ffc107" stroke-width="2"/>
+    <text x="500" y="370" text-anchor="middle" class="subtitle">Automated Cleanup Process</text>
+    
+    <!-- Script Box -->
+    <rect x="180" y="395" width="200" height="120" rx="6" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
+    <text x="280" y="420" text-anchor="middle" class="label" font-weight="bold">Cleanup Script</text>
+    <text x="190" y="445" class="small-label">1. Scan feature_flags.yml</text>
+    <text x="190" y="465" class="small-label">2. Check clean_by dates</text>
+    <text x="190" y="485" class="small-label">3. Find overdue flags</text>
+    <text x="190" y="505" class="small-label">4. Notify owners</text>
+    
+    <!-- Arrow to Detection -->
+    <path d="M 380 455 L 410 455" class="arrow"/>
+    
+    <!-- Detection Box -->
+    <rect x="410" y="405" width="160" height="100" rx="6" fill="#fff3e0" stroke="#ff9800" stroke-width="2"/>
+    <text x="490" y="430" text-anchor="middle" class="label" font-weight="bold">Overdue Flags</text>
+    <text x="420" y="455" class="small-label">new_ui (alice)</text>
+    <text x="420" y="475" class="small-label">old_checkout (bob)</text>
+    <text x="420" y="495" class="small-label">legacy_v1 (no owner)</text>
+    
+    <!-- Arrow to Slack -->
+    <path d="M 570 455 L 600 455" class="arrow"/>
+    
+    <!-- Slack Notification -->
+    <rect x="600" y="395" width="180" height="130" rx="6" fill="#ffffff" stroke="#4a154b" stroke-width="2"/>
+    <text x="690" y="418" text-anchor="middle" font-size="20">💬</text>
+    <text x="690" y="440" text-anchor="middle" class="label" font-weight="bold">Public Slack</text>
+    <text x="690" y="460" text-anchor="middle" class="small-label">#feature-flags</text>
+    
+    <rect x="615" y="475" width="150" height="40" rx="3" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+    <text x="625" y="490" class="small-label" font-size="10">🚨 @alice.smith</text>
+    <text x="625" y="505" class="small-label" font-size="10">new_ui is overdue!</text>
+    
+  </g>
+</svg>

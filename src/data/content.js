@@ -123,7 +123,7 @@ const projectsData = [
     title: "Square: Feature Flag Bot",
     description: "Monitoring & Alerting System for Feature Flag Deprecation",
     image: getImagePath("/flag.jpg"),
-    link: "#",
+    link: "/feature-flag-bot",
     tags: ["engineering"]
   },
   {

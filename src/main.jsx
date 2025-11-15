@@ -6,6 +6,7 @@ import { UnderConstruction } from './components/common/UnderConstruction.jsx'
 import { Contact } from './components/pages/Contact.jsx'
 import { About } from './components/pages/About.jsx'
 import { GDPR } from './components/pages/GDPR.jsx'
+import { FeatureFlagBot } from './components/pages/FeatureFlagBot.jsx'
 import { Projects } from './components/pages/Projects.jsx'
 import { GeoClimb } from './components/pages/GeoClimb.jsx'
 import { CorticalPlasticity } from './components/pages/CorticalPlasticity.jsx'
@@ -46,6 +47,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/" element={<App />} />
         <Route path="/about" element={<About />} />
         <Route path="/gdpr" element={<GDPR />} />
+        <Route path="/feature-flag-bot" element={<FeatureFlagBot />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/geoclimb" element={<GeoClimb />} />
         <Route path="/projects/cortical-plasticity" element={<CorticalPlasticity />} />

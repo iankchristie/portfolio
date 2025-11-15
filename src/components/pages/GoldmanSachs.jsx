@@ -43,7 +43,7 @@ export function GoldmanSachs() {
           </p>
 
           <p style={{ marginBottom: '1.5rem' }}>
-            Still, it was a good summer and a good place to turn 21. I did well and got a return offer, but I left knowing the lifestyle wasn't for me.
+            Still, it was a good summer and a good place to turn 21. I did well and got a return offer, but I left knowing the lifestyle wasn't for me. That's all I have to say about that.
           </p>
         </div>
 
