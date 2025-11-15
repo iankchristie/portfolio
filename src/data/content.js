@@ -144,7 +144,7 @@ const projectsData = [
     title: "John Muir Trail",
     description: "15 Days in the Most Beautiful Place on Earth",
     image: getImagePath("/jmt.JPG"),
-    link: "#",
+    link: "/john-muir-trail",
     tags: ["personal", "outdoors"]
   },
     {
