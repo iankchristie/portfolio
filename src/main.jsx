@@ -5,6 +5,7 @@ import App from './App.jsx'
 import { UnderConstruction } from './components/common/UnderConstruction.jsx'
 import { Contact } from './components/pages/Contact.jsx'
 import { About } from './components/pages/About.jsx'
+import { GDPR } from './components/pages/GDPR.jsx'
 import { Projects } from './components/pages/Projects.jsx'
 import { GeoClimb } from './components/pages/GeoClimb.jsx'
 import { CorticalPlasticity } from './components/pages/CorticalPlasticity.jsx'
@@ -44,6 +45,7 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/about" element={<About />} />
+        <Route path="/gdpr" element={<GDPR />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/geoclimb" element={<GeoClimb />} />
         <Route path="/projects/cortical-plasticity" element={<CorticalPlasticity />} />

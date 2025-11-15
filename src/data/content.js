@@ -116,7 +116,7 @@ const projectsData = [
     title: "Square: GDPR Compliance",
     description: "Durable System for PII Tracking",
     image: getImagePath("square.jpg"),
-    link: "#",
+    link: "/gdpr",
     tags: ["engineering"]
   },
   {
