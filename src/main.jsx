@@ -17,6 +17,8 @@ import { HalfDome } from './components/pages/HalfDome.jsx'
 import { TuolumneTripleCrown } from './components/pages/TuolumneTripleCrown.jsx'
 import { Kilimanjaro } from './components/pages/Kilimanjaro.jsx'
 import { Patagonia } from './components/pages/Patagonia.jsx'
+import { BikeNBuild } from './components/pages/BikeNBuild.jsx'
+import { TheServies } from './components/pages/TheServies.jsx'
 import { Projects } from './components/pages/Projects.jsx'
 import { GeoClimb } from './components/pages/GeoClimb.jsx'
 import { CorticalPlasticity } from './components/pages/CorticalPlasticity.jsx'
@@ -68,6 +70,8 @@ createRoot(document.getElementById('root')).render(
         <Route path="/tuolumne-triple-crown" element={<TuolumneTripleCrown />} />
         <Route path="/kilimanjaro" element={<Kilimanjaro />} />
         <Route path="/patagonia" element={<Patagonia />} />
+        <Route path="/bike-n-build" element={<BikeNBuild />} />
+        <Route path="/the-servies" element={<TheServies />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/geoclimb" element={<GeoClimb />} />
         <Route path="/projects/cortical-plasticity" element={<CorticalPlasticity />} />

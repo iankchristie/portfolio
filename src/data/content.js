@@ -193,7 +193,7 @@ const projectsData = [
     title: "The Servies",
     description: "The Dundies Inspired Work Offsite",
     image: getImagePath("/servies.png"),
-    link: "#",
+    link: "/the-servies",
     tags: ["personal"]
   },
   {
@@ -213,8 +213,8 @@ const projectsData = [
   {
     title: "Bike'n Build",
     description: "Cross Country Bike Trip from Rhode Island to Seattle",
-    image: getImagePath("bnb.jpg"),
-    link: "#",
+    image: getImagePath("/bnb/bnb_map.jpg"),
+    link: "/bike-n-build",
     tags: ["personal", "outdoors"]
   },
 ];
