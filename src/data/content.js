@@ -176,10 +176,10 @@ const projectsData = [
     tags: ["personal", "outdoors"]
   },
   {
-    title: "Lost Array Spire",
+    title: "Lost Arrowhead Spire",
     description: "Fancy Rope Work for Cool Photos",
     image: getImagePath("/lost_arrow.jpg"),
-    link: "#",
+    link: "/lost-arrow-spire",
     tags: ["personal", "outdoors"]
   },
   {
