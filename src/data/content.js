@@ -165,7 +165,7 @@ const projectsData = [
     title: "Van",
     description: "Bob the Van Builder: Yes We Can!",
     image: getImagePath("/van.jpg"),
-    link: "#",
+    link: "/van",
     tags: ["personal"]
   },
   {
