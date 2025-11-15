@@ -1,7 +1,23 @@
 import { Layout } from '../layout/Layout';
 import { ProjectNavigation } from '../navigation/ProjectNavigation';
+import { PhotoGallery } from '../common/PhotoGallery';
 
 export function HalfDome() {
+  const images = [
+    'IMG_3566.jpg',
+    'IMG_3571.jpg',
+    'IMG_3586.jpg',
+    'IMG_3592.jpg',
+    'IMG_3598.jpg',
+    'IMG_3606.jpg',
+    'IMG_3624 (1).jpg',
+    'IMG_3632.jpg',
+    'IMG_3641.jpg',
+    'PXL_20240606_024317075.MP.jpg',
+    'PXL_20240607_015956428.MP.jpg',
+    'PXL_20240607_182214943.MP (1).jpg',
+  ];
+
   return (
     <Layout showRappeller={true}>
       <div style={{
@@ -28,45 +44,11 @@ export function HalfDome() {
           30th Birthday Celebration!
         </p>
 
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-          gap: 'clamp(1rem, 2vw, 2rem)',
-          marginBottom: '3rem',
-          width: '100%'
-        }}>
-          {[
-            'IMG_3566.jpg',
-            'IMG_3571.jpg',
-            'IMG_3586.jpg',
-            'IMG_3592.jpg',
-            'IMG_3598.jpg',
-            'IMG_3606.jpg',
-            'IMG_3624 (1).jpg',
-            'IMG_3632.jpg',
-            'IMG_3641.jpg',
-            'PXL_20240606_024317075.MP.jpg',
-            'PXL_20240607_015956428.MP.jpg',
-            'PXL_20240607_182214943.MP (1).jpg',
-          ].map((image, index) => (
-            <div key={index} style={{
-              overflow: 'hidden',
-              borderRadius: '8px',
-              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
-            }}>
-              <img
-                src={`${import.meta.env.BASE_URL}halfdome/${image}`}
-                alt={`Half Dome ${index + 1}`}
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover',
-                  display: 'block'
-                }}
-              />
-            </div>
-          ))}
-        </div>
+        <PhotoGallery
+          images={images}
+          basePath="halfdome"
+          altPrefix="Half Dome"
+        />
 
         <ProjectNavigation currentLink="/half-dome" />
       </div>

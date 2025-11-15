@@ -1,7 +1,18 @@
 import { Layout } from '../layout/Layout';
 import { ProjectNavigation } from '../navigation/ProjectNavigation';
+import { PhotoGallery } from '../common/PhotoGallery';
 
 export function BikeNBuild() {
+  const images = [
+    'bnb_map.jpg',
+    'IMG_0613.JPG',
+    'IMG_0664.JPG',
+    'IMG_3787.JPG',
+    'IMG_3841.JPG',
+    'IMG_4365 (1).JPG',
+    'IMG_4393.JPG',
+  ];
+
   return (
     <Layout showRappeller={true}>
       <div style={{
@@ -28,40 +39,11 @@ export function BikeNBuild() {
           Cross Country Bike Trip from Rhode Island to Seattle
         </p>
 
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-          gap: 'clamp(1rem, 2vw, 2rem)',
-          marginBottom: '3rem',
-          width: '100%'
-        }}>
-          {[
-            'bnb_map.jpg',
-            'IMG_0613.JPG',
-            'IMG_0664.JPG',
-            'IMG_3787.JPG',
-            'IMG_3841.JPG',
-            'IMG_4365 (1).JPG',
-            'IMG_4393.JPG',
-          ].map((image, index) => (
-            <div key={index} style={{
-              overflow: 'hidden',
-              borderRadius: '8px',
-              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
-            }}>
-              <img
-                src={`${import.meta.env.BASE_URL}bnb/${image}`}
-                alt={`Bike'n Build ${index + 1}`}
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover',
-                  display: 'block'
-                }}
-              />
-            </div>
-          ))}
-        </div>
+        <PhotoGallery
+          images={images}
+          basePath="bnb"
+          altPrefix="Bike'n Build"
+        />
 
         <ProjectNavigation currentLink="/bike-n-build" />
       </div>

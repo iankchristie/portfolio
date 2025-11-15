@@ -1,16 +1,17 @@
 import { Layout } from '../layout/Layout';
 import { ProjectNavigation } from '../navigation/ProjectNavigation';
+import { PhotoGallery } from '../common/PhotoGallery';
 
 export function GeoClimb() {
-  // Images from the geo_climb folder
-  const geoClimbImages = [
-    `${import.meta.env.BASE_URL}geo_climb/IMG_1220.jpg`,
-    `${import.meta.env.BASE_URL}geo_climb/IMG_1224.jpg`,
-    `${import.meta.env.BASE_URL}geo_climb/IMG_1226.jpg`,
-    `${import.meta.env.BASE_URL}geo_climb/IMG_1252_(1).jpg`,
-    `${import.meta.env.BASE_URL}geo_climb/IMG_1249_Large.jpeg`,
-    `${import.meta.env.BASE_URL}geo_climb/IMG_5074_(1).jpg`
+  const images = [
+    'IMG_1220.jpg',
+    'IMG_1224.jpg',
+    'IMG_1226.jpg',
+    'IMG_1252_(1).jpg',
+    'IMG_1249_Large.jpeg',
+    'IMG_5074_(1).jpg'
   ];
+
   return (
     <Layout showRappeller={true}>
       <div style={{
@@ -56,38 +57,11 @@ export function GeoClimb() {
           </p>
         </div>
 
-        {/* Image Grid */}
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-          gap: '1.5rem',
-          width: '100%',
-          marginTop: '2rem',
-          marginBottom: '3rem'
-        }}>
-          {geoClimbImages.map((image, index) => (
-            <div
-              key={index}
-              style={{
-                borderRadius: '8px',
-                overflow: 'hidden',
-                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-                backgroundColor: '#f5f5f5'
-              }}
-            >
-              <img
-                src={image}
-                alt={`GeoClimb project ${index + 1}`}
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover',
-                  display: 'block'
-                }}
-              />
-            </div>
-          ))}
-        </div>
+        <PhotoGallery
+          images={images}
+          basePath="geo_climb"
+          altPrefix="GeoClimb project"
+        />
 
         <div style={{
           fontSize: 'clamp(1rem, 2vw, 1.125rem)',
