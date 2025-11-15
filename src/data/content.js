@@ -137,7 +137,7 @@ const projectsData = [
     title: "El Capitan",
     description: "Picking the Nose and Going Up It",
     image: getImagePath("/el_cap.jpg"),
-    link: "#",
+    link: "/el-capitan",
     tags: ["personal", "outdoors"]
   },
   {
