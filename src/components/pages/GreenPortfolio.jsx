@@ -25,7 +25,7 @@ export function GreenPortfolio() {
           marginBottom: '2rem',
           fontStyle: 'italic'
         }}>
-          GCP Environment Setup using Terraform
+          LLMs + Terraform: a Match Made in Heaven
         </p>
 
         <div style={{

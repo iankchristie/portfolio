@@ -71,7 +71,7 @@ const projectsData = [
   },
   {
     title: "GreenPortfolio: Cloud Architecture",
-    description: "GCP Environment Setup using Terraform",
+    description: "LLMs + Terraform: a Match Made in Heaven",
     image: getImagePath("/greenportfolio_lgo.avif"),
     link: "/projects/greenportfolio",
     tags: ["engineering"]
@@ -186,7 +186,7 @@ const projectsData = [
     title: "Tuolumne Triple Crown",
     description: "One of the Best Days in the Mountains",
     image: getImagePath("/triple_crown.jpg"),
-    link: "#",
+    link: "/tuolumne-triple-crown",
     tags: ["personal", "outdoors"]
   },
   {

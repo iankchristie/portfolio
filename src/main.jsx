@@ -14,6 +14,7 @@ import { GrandCanyon } from './components/pages/GrandCanyon.jsx'
 import { JohnMuirTrail } from './components/pages/JohnMuirTrail.jsx'
 import { LostArrowSpire } from './components/pages/LostArrowSpire.jsx'
 import { HalfDome } from './components/pages/HalfDome.jsx'
+import { TuolumneTripleCrown } from './components/pages/TuolumneTripleCrown.jsx'
 import { Projects } from './components/pages/Projects.jsx'
 import { GeoClimb } from './components/pages/GeoClimb.jsx'
 import { CorticalPlasticity } from './components/pages/CorticalPlasticity.jsx'
@@ -62,6 +63,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/john-muir-trail" element={<JohnMuirTrail />} />
         <Route path="/lost-arrow-spire" element={<LostArrowSpire />} />
         <Route path="/half-dome" element={<HalfDome />} />
+        <Route path="/tuolumne-triple-crown" element={<TuolumneTripleCrown />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/geoclimb" element={<GeoClimb />} />
         <Route path="/projects/cortical-plasticity" element={<CorticalPlasticity />} />
