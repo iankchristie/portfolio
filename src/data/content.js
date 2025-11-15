@@ -158,7 +158,7 @@ const projectsData = [
     title: "Map Projections",
     description: "My Favorite is Van Der Grinten. The Earth's not a Square, it's a Circle! I like Cricles! Today is Gonna be a Good Day!",
     image: getImagePath("/map_projections.png"),
-    link: "#",
+    link: "/map-projections",
     tags: ["personal"]
   },
     {

@@ -8,6 +8,7 @@ import { About } from './components/pages/About.jsx'
 import { GDPR } from './components/pages/GDPR.jsx'
 import { FeatureFlagBot } from './components/pages/FeatureFlagBot.jsx'
 import { ElCapitan } from './components/pages/ElCapitan.jsx'
+import { MapProjections } from './components/pages/MapProjections.jsx'
 import { Projects } from './components/pages/Projects.jsx'
 import { GeoClimb } from './components/pages/GeoClimb.jsx'
 import { CorticalPlasticity } from './components/pages/CorticalPlasticity.jsx'
@@ -50,6 +51,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/gdpr" element={<GDPR />} />
         <Route path="/feature-flag-bot" element={<FeatureFlagBot />} />
         <Route path="/el-capitan" element={<ElCapitan />} />
+        <Route path="/map-projections" element={<MapProjections />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/geoclimb" element={<GeoClimb />} />
         <Route path="/projects/cortical-plasticity" element={<CorticalPlasticity />} />
