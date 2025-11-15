@@ -172,7 +172,7 @@ const projectsData = [
     title: "Half Dome",
     description: "30th Birthday Celebration!",
     image: getImagePath("/half_dome.jpg"),
-    link: "#",
+    link: "/half-dome",
     tags: ["personal", "outdoors"]
   },
   {
