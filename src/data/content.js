@@ -151,7 +151,7 @@ const projectsData = [
     title: "The Grand Canyon",
     description: "18 Days in the Most Beautiful Place on Earth",
     image: getImagePath("/grand_canyon.jpg"),
-    link: "#",
+    link: "/grand-canyon",
     tags: ["personal", "outdoors"]
   },
   {
