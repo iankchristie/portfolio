@@ -29,6 +29,23 @@ export function SmallScaleMining() {
         </p>
 
         <div style={{
+          width: '100%',
+          maxWidth: '800px',
+          margin: '2rem auto',
+        }}>
+          <img
+            src={`${import.meta.env.BASE_URL}asm/mine_movie.gif`}
+            alt="Small Scale Mining Detection Animation"
+            style={{
+              width: '100%',
+              height: 'auto',
+              borderRadius: '8px',
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+            }}
+          />
+        </div>
+
+        <div style={{
           fontSize: 'clamp(1rem, 2vw, 1.125rem)',
           lineHeight: '1.8',
           color: '#1a1a1a',
@@ -405,7 +422,22 @@ export function SmallScaleMining() {
             With a satisfactory performing model, we can start to take advantage of the historic data in the sentintinel archive. Assuming temporal generalizability, we run the model on images for each year we have data.
           </p>
 
-          {/* <historic image comparison> */}
+          <div style={{
+            width: '100%',
+            maxWidth: '600px',
+            margin: '1rem auto 2rem auto',
+          }}>
+            <img
+              src={`${import.meta.env.BASE_URL}asm/time_series_visualization.png`}
+              alt="Timeseries Probability Map"
+              style={{
+                width: '100%',
+                height: 'auto',
+                borderRadius: '8px',
+                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+              }}
+            />
+          </div>
 
           <h3 style={{
             fontSize: 'clamp(1.25rem, 2.5vw, 1.75rem)',
@@ -424,13 +456,44 @@ export function SmallScaleMining() {
             We can then count the number of pixels above the 50% threshold to get ground area estimations. For instance, in this square kilometer, we estimate 200,000m² are being used for mining operations.
           </p>
 
-          {/* <Ground area estimations image> */}
+          <div style={{
+            width: '100%',
+            maxWidth: '600px',
+            margin: '1rem auto 2rem auto',
+          }}>
+            <img
+              src={`${import.meta.env.BASE_URL}asm/growth_num.png`}
+              alt="Ground Area Estimations"
+              style={{
+                width: '100%',
+                height: 'auto',
+                borderRadius: '8px',
+                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+              }}
+            />
+          </div>
 
           <p style={{ marginBottom: '1.5rem' }}>
             We can also use the timeseries to get areas of new growth by substracting consecutive yearly predictions. In the following image we see areas of orange and red as new mine growth.
           </p>
 
-          {/* <New Mine Growth image> */}
+          <div style={{
+            width: '100%',
+            maxWidth: '600px',
+            margin: '1rem auto 2rem auto',
+          }}>
+            <img
+              src={`${import.meta.env.BASE_URL}asm/growth.png`}
+              alt="Historic Mining Growth Comparison"
+              style={{
+                width: '100%',
+                height: 'auto',
+                borderRadius: '8px',
+                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+              }}
+            />
+          </div>
+
 
           <h3 style={{
             fontSize: 'clamp(1.25rem, 2.5vw, 1.75rem)',
@@ -449,7 +512,6 @@ export function SmallScaleMining() {
             We run the classifier over the semantic segmentation inferences for each year and obtain timeseries probability maps like this.
           </p>
 
-          {/* <Timeseries probability single> */}
 
           <p style={{ marginBottom: '1.5rem' }}>
             We can do this for all of the locations in our dataset. And receive probability timeseries for every location. We see a good amount of noise in the data. We believe that this is largely because of clouds and other remote sensing aliases. The immediate next bit of future research is to reducing noise in these plots.
@@ -461,13 +523,43 @@ export function SmallScaleMining() {
             We can create a simple feature detector to determine when a tile goes from mining to no mining. Then we can run this feature detector over all areas in our sample.
           </p>
 
-          {/* <Mine Detection Results> */}
+          <div style={{
+            width: '100%',
+            maxWidth: '600px',
+            margin: '1rem auto 2rem auto',
+          }}>
+            <img
+              src={`${import.meta.env.BASE_URL}asm/sampling.png`}
+              alt="Mine Detection Results"
+              style={{
+                width: '100%',
+                height: 'auto',
+                borderRadius: '8px',
+                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+              }}
+            />
+          </div>
 
           <p style={{ marginBottom: '1.5rem' }}>
             We believe that there are around 800 mines that started since gathering sentinel data, which is 2017. We also believe that 13% of areas that we annotated as not having mining in 2021 have started mining in the region. This is a pretty striking result that we can sample cross validate with Google Earth Engine.
           </p>
 
-          {/* <Google Earth Engine Cross Validation> */}
+          <div style={{
+            width: '100%',
+            maxWidth: '600px',
+            margin: '1rem auto 2rem auto',
+          }}>
+            <img
+              src={`${import.meta.env.BASE_URL}asm/ccdc.png`}
+              alt="Continuous Change Detection Classification"
+              style={{
+                width: '100%',
+                height: 'auto',
+                borderRadius: '8px',
+                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+              }}
+            />
+          </div>
 
           <p style={{ marginBottom: '1.5rem' }}>
             Lastly, when we detect a mine, but can't detect a change since 2017, we can utilize other remote sensing techniques like Continuous Change Detection Classification on LandSat. Here each pixel is corresponds to the same area on earths surface overtime. We can calculate the NDVI, a metric of vegetation health, for this pixel over time. Then we fit a harmonic regression over the points until the error becomes to high. Then we create a "break" and fit another harmonic regression. This is a good indicator of deforestation events. We believe that these deforestation events likely coincide with mine development. Then we can cross validate results with Google Earth.
