@@ -130,7 +130,7 @@ const projectsData = [
     title: "LifeOS",
     description: "Home Grown Task & Time Management App",
     image: getImagePath("/life_os.png"),
-    link: "#",
+    link: "/projects/lifeos",
     tags: ["personal"]
   },
   {

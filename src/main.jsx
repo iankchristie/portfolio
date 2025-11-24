@@ -27,6 +27,7 @@ import { WildfireVulnerability } from './components/pages/WildfireVulnerability.
 import { BrowserAutomations } from './components/pages/BrowserAutomations.jsx'
 import { SmallScaleMining } from './components/pages/SmallScaleMining.jsx'
 import { GreenPortfolio } from './components/pages/GreenPortfolio.jsx'
+import { LifeOS } from './components/pages/LifeOS.jsx'
 import { SquareGoElasticSearch } from './components/pages/SquareGoElasticSearch.jsx'
 import { FelicityLangfuse } from './components/pages/FelicityLangfuse.jsx'
 import { YouTubeSync } from './components/pages/YouTubeSync.jsx'
@@ -80,6 +81,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/projects/browser-automations" element={<BrowserAutomations />} />
         <Route path="/projects/small-scale-mining" element={<SmallScaleMining />} />
         <Route path="/projects/greenportfolio" element={<GreenPortfolio />} />
+        <Route path="/projects/lifeos" element={<LifeOS />} />
         <Route path="/projects/square-go-elastic-search" element={<SquareGoElasticSearch />} />
         <Route path="/projects/felicity-langfuse" element={<FelicityLangfuse />} />
         <Route path="/projects/youtube-sync" element={<YouTubeSync />} />
