@@ -44,7 +44,7 @@ export function SmallScaleMining() {
             marginBottom: '1rem',
             color: '#1a1a1a'
           }}>
-            Previous Work
+            Foundational Work
           </h2>
 
           <p style={{ marginBottom: '1.5rem' }}>
@@ -118,11 +118,14 @@ export function SmallScaleMining() {
           </p>
 
           <ul style={{ marginBottom: '1.5rem', paddingLeft: '2rem' }}>
-            <li style={{ marginBottom: '0.5rem' }}>Can we improve interpretability and explainability of ASM detection models?</li>
-            <li style={{ marginBottom: '0.5rem' }}>What are the long-term temporal trends in mining across Africa?</li>
+            <li style={{ marginBottom: '0.5rem' }}>Can we improve interpretability and explainability of ASM detection?</li>
+            <li style={{ marginBottom: '0.5rem' }}>Can we lower the prediction resolution from Tile to pixel?</li>
+            <li style={{ marginBottom: '0.5rem' }}>What is the trade-off between spatial and spectral resolution?</li>
+            <li style={{ marginBottom: '0.5rem' }}>When did known mines appear?</li>
+            <li style={{ marginBottom: '0.5rem' }}>Can we find unknown mines?</li>
+            <li style={{ marginBottom: '0.5rem' }}>After mining appears in a region, what are the impacts on humanitarian metrics in the surrounding areas?</li>
+            <li style={{ marginBottom: '0.5rem' }}>What are the temporal trends in mining across Africa?</li>
             <li style={{ marginBottom: '0.5rem' }}>Can we predict future areas of ASM expansion?</li>
-            <li style={{ marginBottom: '0.5rem' }}>Can we estimate how much land is directly affected by mining activity?</li>
-            <li style={{ marginBottom: '0.5rem' }}>After mining appears in a region, what are the impacts on environmental variables, economic indicators, or public health?</li>
           </ul>
 
           <h2 style={{
@@ -236,9 +239,11 @@ export function SmallScaleMining() {
             marginBottom: '1rem',
             color: '#1a1a1a'
           }}>
-            Pixel-Wise XGBoost
+            Pixel Segmentation with XGBoost
           </h4>
 
+          {/* <pca image> */}
+          {/* <xgboost image> */}
           <div style={{
             width: '100%',
             maxWidth: '600px',
@@ -246,7 +251,7 @@ export function SmallScaleMining() {
           }}>
             <img
               src={`${import.meta.env.BASE_URL}asm/xgboost.webp`}
-              alt="Pixel-Wise XGBoost Model"
+              alt="Pixel Segmentation with XGBoost Model"
               style={{
                 width: '100%',
                 height: 'auto',
@@ -266,9 +271,10 @@ export function SmallScaleMining() {
             marginBottom: '1rem',
             color: '#1a1a1a'
           }}>
-            U-Net Semantic Segmentation
+            Semantic Segmentation with U-Net
           </h4>
 
+          {/* <UNET Image> */}
           <div style={{
             width: '100%',
             maxWidth: '600px',
@@ -276,7 +282,7 @@ export function SmallScaleMining() {
           }}>
             <img
               src={`${import.meta.env.BASE_URL}asm/unet.png`}
-              alt="U-Net Semantic Segmentation Model"
+              alt="Semantic Segmentation with U-Net Model"
               style={{
                 width: '100%',
                 height: 'auto',
@@ -290,44 +296,182 @@ export function SmallScaleMining() {
             To better model spatial context, I train a U-Net semantic segmentation network that outputs full binary masks of mining footprints. U-Net is designed for dense pixel-level prediction and learns spatial texture, color changes, soil disturbance, and geometric patterns characteristic of ASM sites.
           </p>
 
+          <h4 style={{
+            fontSize: 'clamp(1.125rem, 2vw, 1.5rem)',
+            marginTop: '1.5rem',
+            marginBottom: '1rem',
+            color: '#1a1a1a'
+          }}>
+            Binary Classification
+          </h4>
+
+          <p style={{ marginBottom: '1.5rem' }}>
+            In order to compare pixel-level predictions with tile-level predictions, we trained a small binary classifier that takes an input probability map and outputs the probability that a mine is within the area.
+          </p>
+
+          <h3 style={{
+            fontSize: 'clamp(1.25rem, 2.5vw, 1.75rem)',
+            marginTop: '2rem',
+            marginBottom: '1rem',
+            color: '#1a1a1a'
+          }}>
+            Computing
+          </h3>
+
+          <p style={{ marginBottom: '1.5rem' }}>
+            Compute was performed utilizing the CU Research Computer (CURC). We performed a hyper parameter search and trained 24 u-net models. Each training took between 2-6 hours on Nvidia a100s. Binary classification for each model took around 30 minutes on a100s.
+          </p>
+
           <h2 style={{
             fontSize: 'clamp(1.5rem, 3vw, 2rem)',
             marginTop: '2.5rem',
             marginBottom: '1rem',
             color: '#1a1a1a'
           }}>
-            Results
+            Model Results
           </h2>
 
           <p style={{ marginBottom: '1.5rem' }}>
-            The results show a significant performance gap between the two approaches:
-          </p>
-
-          <ul style={{ marginBottom: '1.5rem', paddingLeft: '2rem' }}>
-            <li style={{ marginBottom: '0.5rem' }}>The XGBoost pixel-wise model detects some mining signals but produces noisy, fragmented predictions due to the spatial complexity of mine morphology.</li>
-            <li style={{ marginBottom: '0.5rem' }}>The U-Net model produces coherent mine footprints and accurately captures the geometry and extent of activity.</li>
-          </ul>
-
-          <p style={{ marginBottom: '1.5rem' }}>
-            Overall, U-Net substantially outperforms the pixel-wise model for both detection and land-area estimation.
+            We observe that the semantic segmentation models outperform MOSAIKS, High Res semantic segmentation, and pixel segmentation. We believe that we've reached We believe this indicates that spectral information is critical in improving identification accuracy. We also understand that spatial context is important in identification accuracy as well.
           </p>
 
           <div style={{
-            width: '100%',
-            maxWidth: '600px',
-            margin: '2rem auto',
+            overflowX: 'auto',
+            marginBottom: '2rem'
           }}>
-            <img
-              src={`${import.meta.env.BASE_URL}asm/comparisons.png`}
-              alt="Model Comparison Results"
-              style={{
-                width: '100%',
-                height: 'auto',
-                borderRadius: '8px',
-                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
-              }}
-            />
+            <table style={{
+              width: '100%',
+              borderCollapse: 'collapse',
+              fontSize: 'clamp(0.875rem, 1.5vw, 1rem)',
+              marginTop: '1.5rem'
+            }}>
+              <thead>
+                <tr style={{ borderBottom: '2px solid #333' }}>
+                  <th style={{ padding: '0.75rem', textAlign: 'left' }}>Model Name</th>
+                  <th style={{ padding: '0.75rem', textAlign: 'left' }}>Pixel-Level AUC</th>
+                  <th style={{ padding: '0.75rem', textAlign: 'left' }}>Binary Classification AUC</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style={{ borderBottom: '1px solid #ddd' }}>
+                  <td style={{ padding: '0.75rem' }}>MOSAIKs</td>
+                  <td style={{ padding: '0.75rem' }}>NA</td>
+                  <td style={{ padding: '0.75rem' }}>0.850</td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid #ddd' }}>
+                  <td style={{ padding: '0.75rem' }}>High Res Unet (1m resolution Karena)</td>
+                  <td style={{ padding: '0.75rem' }}>0.916</td>
+                  <td style={{ padding: '0.75rem' }}>0.854</td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid #ddd' }}>
+                  <td style={{ padding: '0.75rem' }}>Sentinel RGB Unet (10m resolution)</td>
+                  <td style={{ padding: '0.75rem' }}>0.850</td>
+                  <td style={{ padding: '0.75rem' }}>0.851</td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid #ddd' }}>
+                  <td style={{ padding: '0.75rem' }}>AE Pixel-Segmentation</td>
+                  <td style={{ padding: '0.75rem' }}>0.9766</td>
+                  <td style={{ padding: '0.75rem' }}>0.870</td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid #ddd' }}>
+                  <td style={{ padding: '0.75rem' }}>Sentinel Pixel-Segmentation</td>
+                  <td style={{ padding: '0.75rem' }}>0.9334</td>
+                  <td style={{ padding: '0.75rem' }}>0.847</td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid #ddd' }}>
+                  <td style={{ padding: '0.75rem' }}>AE Semantic Segmentation</td>
+                  <td style={{ padding: '0.75rem' }}>0.9582</td>
+                  <td style={{ padding: '0.75rem' }}>0.874</td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid #ddd' }}>
+                  <td style={{ padding: '0.75rem' }}>Sentinel Semantic Segmentation</td>
+                  <td style={{ padding: '0.75rem' }}>0.9565</td>
+                  <td style={{ padding: '0.75rem' }}>0.881</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
+
+          <h2 style={{
+            fontSize: 'clamp(1.5rem, 3vw, 2rem)',
+            marginTop: '2.5rem',
+            marginBottom: '1rem',
+            color: '#1a1a1a'
+          }}>
+            Temporal Analysis
+          </h2>
+
+          <p style={{ marginBottom: '1.5rem' }}>
+            With a satisfactory performing model, we can start to take advantage of the historic data in the sentintinel archive. Assuming temporal generalizability, we run the model on images for each year we have data.
+          </p>
+
+          {/* <historic image comparison> */}
+
+          <h3 style={{
+            fontSize: 'clamp(1.25rem, 2.5vw, 1.75rem)',
+            marginTop: '2rem',
+            marginBottom: '1rem',
+            color: '#1a1a1a'
+          }}>
+            Mining Growth
+          </h3>
+
+          <p style={{ marginBottom: '1.5rem' }}>
+            We see that start of mining is able to be detected in this region.
+          </p>
+
+          <p style={{ marginBottom: '1.5rem' }}>
+            We can then count the number of pixels above the 50% threshold to get ground area estimations. For instance, in this square kilometer, we estimate 200,000m² are being used for mining operations.
+          </p>
+
+          {/* <Ground area estimations image> */}
+
+          <p style={{ marginBottom: '1.5rem' }}>
+            We can also use the timeseries to get areas of new growth by substracting consecutive yearly predictions. In the following image we see areas of orange and red as new mine growth.
+          </p>
+
+          {/* <New Mine Growth image> */}
+
+          <h3 style={{
+            fontSize: 'clamp(1.25rem, 2.5vw, 1.75rem)',
+            marginTop: '2rem',
+            marginBottom: '1rem',
+            color: '#1a1a1a'
+          }}>
+            Mining Probability
+          </h3>
+
+          <p style={{ marginBottom: '1.5rem' }}>
+            Ultimately, we want to be able to collapse the complex 2d spatial timeseries into a single index on the existence of mining in a location. We can do this by utilizing the binary classifier built to compare with MOSAIKs performance.
+          </p>
+
+          <p style={{ marginBottom: '1.5rem' }}>
+            We run the classifier over the semantic segmentation inferences for each year and obtain timeseries probability maps like this.
+          </p>
+
+          {/* <Timeseries probability single> */}
+
+          <p style={{ marginBottom: '1.5rem' }}>
+            We can do this for all of the locations in our dataset. And receive probability timeseries for every location. We see a good amount of noise in the data. We believe that this is largely because of clouds and other remote sensing aliases. The immediate next bit of future research is to reducing noise in these plots.
+          </p>
+
+          {/* <Time Series plots> */}
+
+          <p style={{ marginBottom: '1.5rem' }}>
+            We can create a simple feature detector to determine when a tile goes from mining to no mining. Then we can run this feature detector over all areas in our sample.
+          </p>
+
+          {/* <Mine Detection Results> */}
+
+          <p style={{ marginBottom: '1.5rem' }}>
+            We believe that there are around 800 mines that started since gathering sentinel data, which is 2017. We also believe that 13% of areas that we annotated as not having mining in 2021 have started mining in the region. This is a pretty striking result that we can sample cross validate with Google Earth Engine.
+          </p>
+
+          {/* <Google Earth Engine Cross Validation> */}
+
+          <p style={{ marginBottom: '1.5rem' }}>
+            Lastly, when we detect a mine, but can't detect a change since 2017, we can utilize other remote sensing techniques like Continuous Change Detection Classification on LandSat. Here each pixel is corresponds to the same area on earths surface overtime. We can calculate the NDVI, a metric of vegetation health, for this pixel over time. Then we fit a harmonic regression over the points until the error becomes to high. Then we create a "break" and fit another harmonic regression. This is a good indicator of deforestation events. We believe that these deforestation events likely coincide with mine development. Then we can cross validate results with Google Earth.
+          </p>
 
           <h2 style={{
             fontSize: 'clamp(1.5rem, 3vw, 2rem)',
@@ -378,81 +522,30 @@ export function SmallScaleMining() {
             marginBottom: '1rem',
             color: '#1a1a1a'
           }}>
-            Temporal Trends
+            Future Ideas
           </h2>
 
-          <p style={{ marginBottom: '1.5rem' }}>
-            Now that the spatial model works, I use historic imagery (dating back to 2017) to analyze when mining begins in a region and how it grows over time. The temporal pipeline lets us:
-          </p>
-
           <ul style={{ marginBottom: '1.5rem', paddingLeft: '2rem' }}>
-            <li style={{ marginBottom: '0.5rem' }}>detect the earliest appearance of a mine</li>
-            <li style={{ marginBottom: '0.5rem' }}>track expansion year-by-year</li>
-            <li style={{ marginBottom: '0.5rem' }}>estimate total land degradation</li>
+            <li style={{ marginBottom: '0.5rem' }}>
+              Create lightweight binary classifier with sentinel data for tile image predictions. We can take advantag of sentinel pretrained models like MoCo or Dino. We believe the extra spectra will help to improve prediction accuracy over MOSAIKs. If that is the case, then we can deploy a two teir system for mine analysis. First, run cheaper predictions over large swaths of land to get tile level predictions. Then run semantic segmentation analysis to get ground area estimations and location information.
+            </li>
+            <li style={{ marginBottom: '0.5rem' }}>
+              Smooth out noise in timeseries probability curves. This most likely comes from clouds and other satellite aliases. Dropping the temporal resolution from seasonal to yearly should allow us to get cleaner imagery and a cleaner time series.
+            </li>
+            <li style={{ marginBottom: '0.5rem' }}>
+              Explore areas where the model fails. Before running this on country wide levels, we want to get a better sense of how the model fails. What classes it might be getting confused with.
+            </li>
+            <li style={{ marginBottom: '0.5rem' }}>
+              Run over large swaths of land. I'm particularly interested in DRC statistics. Cobalt mining is exploding in that country.
+            </li>
+            <li style={{ marginBottom: '0.5rem' }}>
+              Correlate ground area estimations with mineral pricing and mappings.
+            </li>
+            <li style={{ marginBottom: '0.5rem' }}>
+              Correlate humanitarian metrics with ground area estimations.
+            </li>
           </ul>
 
-          <p style={{ marginBottom: '1.5rem' }}>
-            Below are examples of mines appearing over time:
-          </p>
-
-          <div style={{
-            width: '100%',
-            maxWidth: '600px',
-            margin: '1rem auto 2rem auto',
-          }}>
-            <img
-              src={`${import.meta.env.BASE_URL}asm/many.png`}
-              alt="Temporal Trends of Mining Activity"
-              style={{
-                width: '100%',
-                height: 'auto',
-                borderRadius: '8px',
-                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
-              }}
-            />
-          </div>
-
-          <p style={{ marginBottom: '1.5rem' }}>
-            Earliest point where the mine becomes detectable:
-          </p>
-
-          <div style={{
-            width: '100%',
-            maxWidth: '600px',
-            margin: '1rem auto 2rem auto',
-          }}>
-            <img
-              src={`${import.meta.env.BASE_URL}asm/probability.png`}
-              alt="Earliest Detection of Mining Activity"
-              style={{
-                width: '100%',
-                height: 'auto',
-                borderRadius: '8px',
-                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
-              }}
-            />
-          </div>
-
-          <p style={{ marginBottom: '1.5rem' }}>
-            Expansion and land-area footprint estimation:
-          </p>
-
-          <div style={{
-            width: '100%',
-            maxWidth: '600px',
-            margin: '1rem auto 2rem auto',
-          }}>
-            <img
-              src={`${import.meta.env.BASE_URL}asm/landarea.png`}
-              alt="Mining Expansion and Land Area Footprint"
-              style={{
-                width: '100%',
-                height: 'auto',
-                borderRadius: '8px',
-                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
-              }}
-            />
-          </div>
         </div>
 
         <ProjectNavigation currentLink="/projects/small-scale-mining" />
