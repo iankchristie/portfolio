@@ -13,9 +13,9 @@ export const heroContent = {
   name: "Ian Christie",
   subtitle: "Senior Software Engineer - Researcher",
   bio: [
-    "Masters student with 8 years of experience in Big and Small Tech.",
+    "Masters student researching Geospatial Machine Learning, with 8 years of experience in Big and Small Tech.",
     "I'm passionate about Software Engineering, AI, Earth Science, Remote Sensing, and the intersection of technology & nature.",
-    "Raised in Houston, currently based out of San Francisco and Boulder. "
+    "Currently based out of San Francisco and Boulder. "
   ]
 };
 
