@@ -1,6 +1,7 @@
 import { Layout } from '../layout/Layout';
 import { ProjectNavigation } from '../navigation/ProjectNavigation';
 import { PhotoGallery } from '../common/PhotoGallery';
+import { getProjectRappeller } from '../../data/content';
 
 export function GeoClimb() {
   const images = [
@@ -13,7 +14,7 @@ export function GeoClimb() {
   ];
 
   return (
-    <Layout showRappeller={true}>
+    <Layout showRappeller={true} rappellerImage={getProjectRappeller('/projects/geoclimb')}>
       <div style={{
         width: '100%',
         margin: '0 auto',

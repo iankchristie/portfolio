@@ -2,7 +2,7 @@ import { Layout } from '../layout/Layout';
 
 export function About() {
   return (
-    <Layout showRappeller={true}>
+    <Layout showRappeller={true} rappellerImage={`${import.meta.env.BASE_URL}computer-rapeller.png`}>
       <div style={{
         display: 'flex',
         flexDirection: 'column',

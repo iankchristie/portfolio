@@ -1,10 +1,11 @@
 import { Layout } from '../layout/Layout';
 import { ProjectNavigation } from '../navigation/ProjectNavigation';
 import { CollapsibleCode } from '../common/CollapsibleCode';
+import { getProjectRappeller } from '../../data/content';
 
 export function MapProjections() {
   return (
-    <Layout showRappeller={true}>
+    <Layout showRappeller={true} rappellerImage={getProjectRappeller('/map-projections')}>
       <div style={{
         width: '100%',
         margin: '0 auto',

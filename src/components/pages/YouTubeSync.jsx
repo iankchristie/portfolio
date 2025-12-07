@@ -1,9 +1,10 @@
 import { Layout } from '../layout/Layout';
 import { ProjectNavigation } from '../navigation/ProjectNavigation';
+import { getProjectRappeller } from '../../data/content';
 
 export function YouTubeSync() {
   return (
-    <Layout showRappeller={true}>
+    <Layout showRappeller={true} rappellerImage={getProjectRappeller('/projects/youtube-sync')}>
       <div style={{
         width: '100%',
         margin: '0 auto',

@@ -25,113 +25,128 @@ const projectsData = [
     description: "Semantic Segmentation Model of Remote Sensing Data",
     image: getImagePath("/asm.png"),
     link: "/projects/small-scale-mining",
-    tags: ["ai", "environment"]
+    tags: ["ai", "environment"],
+    rappeller: "computer-rapeller.png"
   },
   {
     title: "Ohmward",
     description: "Power Grid Outage Prediction using Meteoroligical and Utility data.",
     image: getImagePath("/ohmward.png"),
     link: "/projects/ohmward",
-    tags: ["ai", "environment"]
+    tags: ["ai", "environment"],
+    rappeller: "computer-rapeller.png"
   },
   {
     title: "Wildfire Vunerability",
     description: "Agentic LLM Analysis of Operational Response Forms",
     image: getImagePath("/wildfire.png"),
     link: "/projects/wildfire-vulnerability",
-    tags: ["ai", "environment"]
+    tags: ["ai", "environment"],
+    rappeller: "computer-rapeller.png"
   },
   {
     title: "Browser Automations",
     description: "LLM Structured Outputs into an Abstract Syntax Tree DSL",
     image: getImagePath("llm.jpg"),
     link: "/projects/browser-automations",
-    tags: ["ai"]
+    tags: ["ai"],
+    rappeller: "computer-rapeller.png"
   },
   {
     title: "GeoClimb",
     description: "Geologic Foundation Model Aimed at Detecting Novel Climbing Areas",
     image: getImagePath("/geoclimb.png"),
     link: "/projects/geoclimb",
-    tags: ["ai"]
+    tags: ["ai"],
+    rappeller: "computer-rapeller.png"
   },
   {
     title: "Cortical Plasticity",
     description: "NeuroBiologic Model for the Development of Direction Selectivity",
     image: getImagePath("/cortical.png"),
     link: "/projects/cortical-plasticity",
-    tags: ["ai", "neuroscience"]
+    tags: ["ai", "neuroscience"],
+    rappeller: "computer-rapeller.png"
   },
   {
     title: "Felicity: Scientific Prompt Development",
     description: "LLM Experimentation, Deployment, Regresssion Tracking, Dataset Development",
     image: getImagePath("/langfuse.svg"),
     link: "/projects/felicity-langfuse",
-    tags: ["engineering"]
+    tags: ["engineering"],
+    rappeller: "computer-rapeller.png"
   },
   {
     title: "GreenPortfolio: Cloud Architecture",
     description: "LLMs + Terraform: a Match Made in Heaven",
     image: getImagePath("/greenportfolio_lgo.avif"),
     link: "/projects/greenportfolio",
-    tags: ["engineering"]
+    tags: ["engineering"],
+    rappeller: "computer-rapeller.png"
   },
   {
     title: "Square: Go Elastic Search",
     description: "Before there was AI, there was Elastic Search",
     image: getImagePath("/square_go.webp"),
     link: "/projects/square-go-elastic-search",
-    tags: ["engineering"]
+    tags: ["engineering"],
+    rappeller: "computer-rapeller.png"
   },
   {
     title: "Square: Fully Reactive Android App",
     description: "Overview of Android Architecture at Square Appointments",
     image: getImagePath("/jack.png"),
     link: "/projects/square-android",
-    tags: ["engineering"]
+    tags: ["engineering"],
+    rappeller: "computer-rapeller.png"
   },
   {
     title: "Google: Video Synchronization Protocol",
     description: "Video Interleaving for Continous Offline Content",
     image: getImagePath("/youtube.png"),
     link: "/projects/youtube-sync",
-    tags: ["engineering"]
+    tags: ["engineering"],
+    rappeller: "computer-rapeller.png"
   },
   {
     title: "Google: The Physical Web",
     description: "Long Deprecated Bluetooth Beacon Integration with Chrome",
     image: getImagePath("/chrome.svg"),
     link: "/projects/physical-web",
-    tags: ["engineering"]
+    tags: ["engineering"],
+    rappeller: "computer-rapeller.png"
   },
   {
     title: "Goldman Sachs: Internship",
     description: "The Single Time I've Used AngularJS",
     image: getImagePath("/goldman.png"),
     link: "/projects/goldman-sachs",
-    tags: ["engineering"]
+    tags: ["engineering"],
+    rappeller: "computer-rapeller.png"
   },
-
-    {
+  {
     title: "Square: GDPR Compliance",
     description: "Durable System for PII Tracking",
     image: getImagePath("square.jpg"),
     link: "/gdpr",
-    tags: ["engineering"]
+    tags: ["engineering"],
+    rappeller: "computer-rapeller.png"
   },
   {
     title: "Square: Feature Flag Bot",
     description: "Monitoring & Alerting System for Feature Flag Deprecation",
     image: getImagePath("/flag.jpg"),
     link: "/feature-flag-bot",
-    tags: ["engineering"]
+    tags: ["engineering"],
+    rappeller: "computer-rapeller.png"
   },
   {
     title: "LifeOS",
     description: "Home Grown Task & Time Management App",
     image: getImagePath("/life_os.png"),
     link: "/projects/lifeos",
-    tags: ["personal"]
+    tags: ["personal"],
+    rappeller: "computer-rapeller.png"
   },
   {
     title: "El Capitan",
@@ -147,7 +162,7 @@ const projectsData = [
     link: "/john-muir-trail",
     tags: ["personal", "outdoors"]
   },
-    {
+  {
     title: "The Grand Canyon",
     description: "18 Days in the Most Beautiful Place on Earth",
     image: getImagePath("/grand_canyon.jpg"),
@@ -159,9 +174,10 @@ const projectsData = [
     description: "My Favorite is Van Der Grinten. The Earth's not a Square, it's a Circle! I like Cricles! Today is Gonna be a Good Day!",
     image: getImagePath("/map_projections.png"),
     link: "/map-projections",
-    tags: ["personal"]
+    tags: ["personal"],
+    rappeller: "computer-rapeller.png"
   },
-    {
+  {
     title: "Van",
     description: "Bob the Van Builder: Yes We Can!",
     image: getImagePath("/van.jpg"),
@@ -232,3 +248,9 @@ export const projects = allProjects;
 
 // Export projects with actual pages (for navigation)
 export const projectsWithPages = allProjects.filter(project => project.link && !project.link.includes("#"));
+
+// Helper to get rappeller image path for a project by its link
+export const getProjectRappeller = (link) => {
+  const project = allProjects.find(p => p.link === link);
+  return project?.rappeller ? getImagePath(project.rappeller) : undefined;
+};

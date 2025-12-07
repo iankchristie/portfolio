@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import { Layout } from '../layout/Layout';
 import { ProjectNavigation } from '../navigation/ProjectNavigation';
+import { getProjectRappeller } from '../../data/content';
 
 export function SquareGoElasticSearch() {
   const [isCodeExpanded, setIsCodeExpanded] = useState(false);
 
   return (
-    <Layout showRappeller={true}>
+    <Layout showRappeller={true} rappellerImage={getProjectRappeller('/projects/square-go-elastic-search')}>
       <div style={{
         width: '100%',
         margin: '0 auto',
