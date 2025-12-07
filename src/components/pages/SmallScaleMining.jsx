@@ -25,7 +25,11 @@ export function SmallScaleMining() {
           marginBottom: '2rem',
           fontStyle: 'italic'
         }}>
-          Semantic Segmentation Model of Remote Sensing Data
+          Time-Series Semantic Segmentation Model of Remote Sensing Data
+        </p>
+
+        <p style={{ marginBottom: '1.5rem' }}>
+          My main research focuses on remote sensing and temporal analysis, specifically investigating trends in Artisanal Small-Scale Mining (ASM) activity across Africa. This work is advised by Dr. Esther Rolf and in collaboration with a group of researchers at UC Berkeley and UCLA. This is ongoing research, so I can't share detailed results.
         </p>
 
         <div style={{
@@ -51,9 +55,6 @@ export function SmallScaleMining() {
           color: '#1a1a1a',
           marginBottom: '3rem'
         }}>
-          <p style={{ marginBottom: '1.5rem' }}>
-            My main research focuses on remote sensing and temporal analysis, specifically investigating trends in Artisanal Small-Scale Mining (ASM) activity across Africa. This work is conducted in collaboration with Dr. Esther Rolf and a group of researchers at Stanford, UC Berkeley, and UCLA.
-          </p>
 
           <h2 style={{
             fontSize: 'clamp(1.5rem, 3vw, 2rem)',
@@ -69,7 +70,7 @@ export function SmallScaleMining() {
           </p>
 
           <p style={{ marginBottom: '1.5rem' }}>
-            In that study, the team developed a model that uses high-resolution satellite imagery to detect the presence of ASM activity. The dataset was hand-annotated by research assistants at UCLA, and the model leverages Dr. Rolf's groundbreaking MOSAIKS framework—an efficient, generalized machine-learning method for rapid prediction from satellite imagery.
+            In that study, the team developed a model that uses high-resolution satellite imagery to detect the presence of ASM activity. The dataset was hand-annotated by research assistants at UCLA, and the model leverages Dr. Rolf's MOSAIKS framework—an efficient, generalized machine-learning method for rapid prediction from satellite imagery.
           </p>
 
           <p style={{ marginBottom: '1.5rem' }}>
@@ -349,65 +350,8 @@ export function SmallScaleMining() {
           </h2>
 
           <p style={{ marginBottom: '1.5rem' }}>
-            We observe that the semantic segmentation models outperform MOSAIKS, High Res semantic segmentation, and pixel segmentation. We believe that we've reached We believe this indicates that spectral information is critical in improving identification accuracy. We also understand that spatial context is important in identification accuracy as well.
+            I can't share the exact details of these results. However, we found that that the semantic segmentation models outperform MOSAIKS, High Res semantic segmentation, and pixel segmentation. We believe this indicates that spectral information is critical in improving identification accuracy. We also understand that spatial context is important in identification accuracy as well.
           </p>
-
-          <div style={{
-            overflowX: 'auto',
-            marginBottom: '2rem'
-          }}>
-            <table style={{
-              width: '100%',
-              borderCollapse: 'collapse',
-              fontSize: 'clamp(0.875rem, 1.5vw, 1rem)',
-              marginTop: '1.5rem'
-            }}>
-              <thead>
-                <tr style={{ borderBottom: '2px solid #333' }}>
-                  <th style={{ padding: '0.75rem', textAlign: 'left' }}>Model Name</th>
-                  <th style={{ padding: '0.75rem', textAlign: 'left' }}>Pixel-Level AUC</th>
-                  <th style={{ padding: '0.75rem', textAlign: 'left' }}>Binary Classification AUC</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr style={{ borderBottom: '1px solid #ddd' }}>
-                  <td style={{ padding: '0.75rem' }}>MOSAIKs</td>
-                  <td style={{ padding: '0.75rem' }}>NA</td>
-                  <td style={{ padding: '0.75rem' }}>0.850</td>
-                </tr>
-                <tr style={{ borderBottom: '1px solid #ddd' }}>
-                  <td style={{ padding: '0.75rem' }}>High Res Unet (1m resolution Karena)</td>
-                  <td style={{ padding: '0.75rem' }}>0.916</td>
-                  <td style={{ padding: '0.75rem' }}>0.854</td>
-                </tr>
-                <tr style={{ borderBottom: '1px solid #ddd' }}>
-                  <td style={{ padding: '0.75rem' }}>Sentinel RGB Unet (10m resolution)</td>
-                  <td style={{ padding: '0.75rem' }}>0.850</td>
-                  <td style={{ padding: '0.75rem' }}>0.851</td>
-                </tr>
-                <tr style={{ borderBottom: '1px solid #ddd' }}>
-                  <td style={{ padding: '0.75rem' }}>AE Pixel-Segmentation</td>
-                  <td style={{ padding: '0.75rem' }}>0.9766</td>
-                  <td style={{ padding: '0.75rem' }}>0.870</td>
-                </tr>
-                <tr style={{ borderBottom: '1px solid #ddd' }}>
-                  <td style={{ padding: '0.75rem' }}>Sentinel Pixel-Segmentation</td>
-                  <td style={{ padding: '0.75rem' }}>0.9334</td>
-                  <td style={{ padding: '0.75rem' }}>0.847</td>
-                </tr>
-                <tr style={{ borderBottom: '1px solid #ddd' }}>
-                  <td style={{ padding: '0.75rem' }}>AE Semantic Segmentation</td>
-                  <td style={{ padding: '0.75rem' }}>0.9582</td>
-                  <td style={{ padding: '0.75rem' }}>0.874</td>
-                </tr>
-                <tr style={{ borderBottom: '1px solid #ddd' }}>
-                  <td style={{ padding: '0.75rem' }}>Sentinel Semantic Segmentation</td>
-                  <td style={{ padding: '0.75rem' }}>0.9565</td>
-                  <td style={{ padding: '0.75rem' }}>0.881</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
 
           <h2 style={{
             fontSize: 'clamp(1.5rem, 3vw, 2rem)',

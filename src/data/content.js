@@ -11,7 +11,7 @@ export const getImagePath = (path) => {
 
 export const heroContent = {
   name: "Ian Christie",
-  subtitle: "Software Engineer - Researcher",
+  subtitle: "Senior Software Engineer - Researcher",
   bio: [
     "Masters student with 8 years of experience in Big and Small Tech.",
     "I'm passionate about Software Engineering, AI, Earth Science, Remote Sensing, and the intersection of technology & nature.",
