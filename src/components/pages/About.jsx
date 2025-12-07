@@ -61,7 +61,7 @@ export function About() {
           </p>
 
           <p style={{ marginBottom: '1.5rem' }}>
-            Eventually, I decided to go back to school to learn more about the intersection of Earth Science and AI. I am now pursuing a research-based master's degree in Computer Science at the University of Colorado Boulder. My primary research, with Dr. Esther Rolf, investigates temporal trends in Artisanal Small-Scale Mining (ASM) operations. I've also collaborated with power engineering researchers and wildfire researchers at the Earth Lab. I do startup consulting as well having worked with Felicity AI and GreenPortfolio.
+            Eventually, I decided to go back to school to learn more about the intersection of Earth Science and AI. I am now pursuing a research-based master's degree in Computer Science at the University of Colorado Boulder. My primary research, investigates temporal trends in Artisanal Small-Scale Mining (ASM) operations. I've also collaborated with power engineering researchers and wildfire researchers at the Earth Lab. I do startup consulting as well having worked with Felicity AI and GreenPortfolio.
           </p>
 
           <p style={{ marginBottom: '1.5rem' }}>
