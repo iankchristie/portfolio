@@ -32,10 +32,14 @@ export function Ohmward() {
         <p style={{
           fontSize: 'clamp(1rem, 2vw, 1.125rem)',
           color: '#1a1a1a',
-          marginBottom: '2rem',
+          marginBottom: '1.5rem',
           fontStyle: 'italic'
         }}>
           This paper was accepted and presented at the IEEE PES ISGT EUROPE 2025 conference in Malta.
+        </p>
+
+        <p style={{ marginBottom: '1.5rem' }}>
+          Please checkout an interactive demo of the model at: <a target="_blank" rel="noopener noreferrer" href="https://ohmward.onrender.com">https://ohmward.onrender.com</a>. (This may take a few minutes to boot up).
         </p>
 
         <div style={{
@@ -281,6 +285,41 @@ export function Ohmward() {
               Ohmward isn't just a model — it's a vision for safer, smarter communities. As extreme weather becomes the norm, tools like this will be vital in keeping the lights on.
             </p>
           </blockquote>
+        </div>
+
+        <h2 style={{
+          fontSize: 'clamp(1.5rem, 3vw, 2rem)',
+          marginTop: '2.5rem',
+          marginBottom: '1rem',
+          color: '#1a1a1a'
+        }}>
+          Interactive Demo
+        </h2>
+
+        <p style={{
+          fontSize: 'clamp(1rem, 2vw, 1.125rem)',
+          marginBottom: '1.5rem',
+          color: '#1a1a1a'
+        }}>
+          Try the Ohmward power outage prediction model yourself:
+        </p>
+
+        <div style={{
+          width: '100%',
+          margin: '2rem 0',
+          borderRadius: '8px',
+          overflow: 'hidden',
+          boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+        }}>
+          <iframe
+            src="https://ohmward.onrender.com"
+            title="Ohmward Power Outage Prediction Demo"
+            style={{
+              width: '100%',
+              height: '800px',
+              border: 'none'
+            }}
+          />
         </div>
 
         <ProjectNavigation currentLink="/projects/ohmward" />
