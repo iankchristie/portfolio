@@ -33,6 +33,11 @@ export function SmallScaleMining() {
           My main research focuses on remote sensing and temporal analysis, specifically investigating trends in Artisanal Small-Scale Mining (ASM) activity across Africa. This work is advised by Dr. Esther Rolf and in collaboration with a group of researchers at UC Berkeley and UCLA. This is ongoing research, so I can't share detailed results.
         </p>
 
+        <p style={{ marginBottom: '1.5rem' }}>
+          Please checkout an interactive demo of the model at: <a target="_blank" rel="noopener noreferrer" href='https://asmdemo.iankchristie.com'>https://asmdemo.iankchristie.com</a>. (This may take a minute to boot up).
+        </p>
+
+
         <div style={{
           width: '100%',
           maxWidth: '800px',
@@ -583,6 +588,41 @@ export function SmallScaleMining() {
             </li>
           </ul>
 
+        </div>
+
+        <h2 style={{
+          fontSize: 'clamp(1.5rem, 3vw, 2rem)',
+          marginTop: '2.5rem',
+          marginBottom: '1rem',
+          color: '#1a1a1a'
+        }}>
+          Interactive Demo
+        </h2>
+
+        <p style={{
+          fontSize: 'clamp(1rem, 2vw, 1.125rem)',
+          marginBottom: '1.5rem',
+          color: '#1a1a1a'
+        }}>
+          Try the ASM detection model yourself:
+        </p>
+
+        <div style={{
+          width: '100%',
+          margin: '2rem 0',
+          borderRadius: '8px',
+          overflow: 'hidden',
+          boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+        }}>
+          <iframe
+            src="https://asmdemo.iankchristie.com"
+            title="ASM Detection Demo"
+            style={{
+              width: '100%',
+              height: '800px',
+              border: 'none'
+            }}
+          />
         </div>
 
         <ProjectNavigation currentLink="/projects/small-scale-mining" />
